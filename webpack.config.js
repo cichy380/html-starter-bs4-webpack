@@ -48,8 +48,13 @@ module.exports = {
   devtool: 'source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'HTML Starter',
-      template: './assets/index.htm',
+      title: 'HTML Starter - homepage',
+      template: './assets/html/index.htm',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'HTML Starter - product #1',
+      template: './assets/html/templates/product-01.htm',
+      filename: 'templates/product-01.htm',
     }),
     new ExtractTextPlugin('styles.css'),
   ]

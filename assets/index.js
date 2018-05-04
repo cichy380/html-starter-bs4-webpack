@@ -4,4 +4,4 @@ import 'popper.js';
 
 import 'bootstrap';
 
-import './index.scss';
+import './css/index.scss';
