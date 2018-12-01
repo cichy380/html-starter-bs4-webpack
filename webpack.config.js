@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './assets/index.js',
@@ -11,37 +11,36 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/,
+        test: /\.(html)$/,
         loader: 'html-loader',
       },
       {
-        test: /\.(scss)$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader', // inject CSS to page
-          use: [{
-            loader: 'css-loader', // translates CSS into CommonJS modules
+        test: /\.(css|sass|scss)$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
             options: {
-              minimize: true,
-              sourceMap: true,
+              importLoaders: 2,
+              sourceMap: true
             }
-          }, {
-            loader: 'postcss-loader', // Run post css actions
+          },
+          {
+            loader: 'postcss-loader',
             options: {
-              sourceMap: true,
-              plugins: function () { // post css plugins, can be exported to postcss.config.js
-                return [
-                  require('precss'),
-                  require('autoprefixer'),
-                ];
-              },
-            },
-          }, {
-            loader: 'sass-loader', // compiles Sass to CSS
+              plugins: () => [
+                require('autoprefixer')
+              ],
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'sass-loader',
             options: {
-              sourceMap: true,
-            },
-          }],
-        }),
+              sourceMap: true
+            }
+          }
+        ]
       },
     ],
   },
@@ -101,6 +100,8 @@ module.exports = {
       template: './assets/html/product-01.htm',
       filename: 'product-01.htm',
     }),
-    new ExtractTextPlugin('styles.css'),
+    new MiniCssExtractPlugin({
+      filename: './css/styles.css'
+    }),
   ]
 };
