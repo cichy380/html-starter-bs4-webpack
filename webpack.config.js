@@ -8,11 +8,18 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.bundle.js',
   },
+  // Generate sourcemaps for proper error messages
+  devtool: 'source-map',
+  performance: {
+    // Turn off size warnings for entry points
+    hints: false,
+  },
   module: {
     rules: [
       {
         test: /\.(html)$/,
         loader: 'html-loader',
+        exclude: /node_modules/,
       },
       {
         test: /\.(css|sass|scss)$/,
@@ -40,11 +47,11 @@ module.exports = {
               sourceMap: true
             }
           }
-        ]
+        ],
+        exclude: /node_modules/,
       },
     ],
   },
-  devtool: 'source-map',
   plugins: [
     new HtmlWebpackPlugin({
       title: 'HTML Starter - homepage',
