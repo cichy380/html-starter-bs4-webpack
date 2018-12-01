@@ -50,6 +50,13 @@ module.exports = {
         ],
         exclude: /node_modules/,
       },
+      {
+        test: /\.(js)$/,
+        use: {
+          loader: "babel-loader"
+        },
+        exclude: /node_modules/,
+      },
     ],
   },
   plugins: [

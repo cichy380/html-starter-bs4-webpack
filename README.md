@@ -9,12 +9,14 @@ HTML Starter helps front-end developers build websites based on advance technolo
 | Node.js >= 6.11.5 | `node -v`            | [nodejs.org](http://nodejs.org/) |
 | npm >= 4.6.0      | `npm -v`             | [npm is distributed with Node.js](https://www.npmjs.com/get-npm) |
 | Yarn >= 1.6.0     | `yarn --version`     | [installation](https://yarnpkg.com/en/docs/install) |
-| Webpack >= 3.x    | `webpack -v`         | `yarn add webpack --dev` |
+| Webpack >= 4.x    | `webpack -v`         | `yarn add webpack --dev` |
 
 ## Features
 
-* [Webpack](https://webpack.js.org/) module bundler
-* [Bootstrap](http://getbootstrap.com/) the most popular HTML, CSS and JS framework
+* [Webpack 4](https://webpack.js.org/) module bundler
+* [Bootstrap 4](http://getbootstrap.com/) the most popular HTML, CSS and JS framework
+* [Autoprefixer](https://autoprefixer.github.io/) plugin to parse CSS and add vendor prefixes
+* [Babel](https://babeljs.io/) toolchain to convert ES6+ code into a backwards compatible
 
 ### Bootstrap is dependent on:
 
