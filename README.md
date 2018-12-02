@@ -15,6 +15,7 @@ HTML Starter helps front-end developers build websites based on advance technolo
 
 * [Webpack 4](https://webpack.js.org/) module bundler
 * [Bootstrap 4](http://getbootstrap.com/) the most popular HTML, CSS and JS framework
+* [Font Awesome 5](https://fontawesome.com/) the web's most popular vector icons and social logos
 * [Autoprefixer](https://autoprefixer.github.io/) plugin to parse CSS and add vendor prefixes
 * [Babel](https://babeljs.io/) toolchain to convert ES6+ code into a backwards compatible
 * [webpack-dev-server](https://github.com/webpack/webpack-dev-server) live reloading (browser update after changes)
