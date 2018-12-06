@@ -1,50 +1,45 @@
-# HTML Starter version 2
+# HTML Starter
 
-HTML Starter helps front-end developers build websites based on advance technologies. Responsive templates include [Bootstrap 4](https://getbootstrap.com/) in your project using [Webpack](https://webpack.js.org/).
-
-## Requirements
-
-| Prerequisite      | How to check         | How to install
-| ----------------- | -------------------- | ------------- |
-| Node.js >= 6.11.5 | `node -v`            | [nodejs.org](http://nodejs.org/) |
-| npm >= 4.6.0      | `npm -v`             | [npm is distributed with Node.js](https://www.npmjs.com/get-npm) |
-| Yarn >= 1.6.0     | `yarn --version`     | [installation](https://yarnpkg.com/en/docs/install) |
-| Webpack >= 4.x    | `webpack -v`         | `yarn add webpack --dev` |
+This boilerplate with [Webpack](https://webpack.js.org/) based setup helps you build web apps and sites much faster. Kick-start your project with 
+popular development workflow.
 
 ## Features
 
-* [Webpack 4](https://webpack.js.org/) module bundler
-* [Bootstrap 4](http://getbootstrap.com/) the most popular HTML, CSS and JS framework
-* [Font Awesome 5](https://fontawesome.com/) the web's most popular vector icons and social logos
-* [Autoprefixer](https://autoprefixer.github.io/) plugin to parse CSS and add vendor prefixes
-* [Babel](https://babeljs.io/) toolchain to convert ES6+ code into a backwards compatible
-* [webpack-dev-server](https://github.com/webpack/webpack-dev-server) live reloading (browser update after changes)
+* **[Webpack 4](https://webpack.js.org/)** - module bundler (write CSS with Sass, automatically check JS 
+for errors, optimize images...)
+* **[Bootstrap 4](http://getbootstrap.com/)** - the most popular HTML, CSS and JS framework
+* [Sass](https://sass-lang.com/) - CSS preprocessor
+* [Font Awesome 5](https://fontawesome.com/) - the web's most popular vector icons and social logos
+* [Autoprefixer](https://autoprefixer.github.io/) - plugin to parse CSS and add vendor prefixes
+* [Babel](https://babeljs.io/) - toolchain to convert ES6+ code into a backwards compatible
+* [webpack-dev-server](https://github.com/webpack/webpack-dev-server) - live reloading (browser update after changes)
 
-### Bootstrap is dependent on:
+#### [Bootstrap 4](http://getbootstrap.com/) is dependent on:
 
-* [jQuery](http://jquery.com/) javascript library
-* [Popper](http://popper.js.org/) tooltips and popovers library
-
-For Bootstrap to compile, make sure you install and use the required loaders: sass-loader, postcss-loader with Autoprefixer.
+* [jQuery](http://jquery.com/) - JavaScript library
+* [Popper](http://popper.js.org/) - tooltips and popovers library
 
 ## Theme development
 
-HTML Starter uses [Webpack](https://webpack.js.org/) as its build system.
+[Node.js](http://nodejs.org/) is the only required dependency to work with HTML Starter.
 
-### Tools
 
-Building the template requires [Node.js](http://nodejs.org/download/). I recommend you installation to the latest 
-version of [Yarn](https://yarnpkg.com/en/docs/install). From the command line run `yarn add package.json` 
-(recommended) or `npm install`.
+#### Installation
 
-You now have all the necessary dependencies to run the build process.
+1. Install [Node.js](http://nodejs.org/) (installation depends on your system). After finishing, you will be able to 
+check the version number using `node -v` and `npm -v` commands 
+([npm is distributed with Node.js](https://www.npmjs.com/get-npm)).
+2. I recommend you to install the latest version of [Yarn](https://yarnpkg.com/en/docs/install).
+3. Clone the repo using `git clone https://github.com/cichy380/html-starter-bs4-webpack.git` or [download HTML Starter](https://github.com/cichy380/html-starter-bs4-webpack/archive/master.zip).
+4. Open folder **html-starter-bs4-webpack** (command: `cd html-starter-bs4-webpack`) and install necessary dependencies of Starter via command: `yarn` (recommended) or `npm install`. 
 
-### Available Webpack commands
+You now have all the necessary dependencies to run the build process. HTML Starter uses [Webpack](https://webpack.js.org/) as its build system.
 
-* `webpack` — Compile assets for developing (with source maps, without minify)
-* `webpack --watch` — Compile assets when file changes are made
-* `webpack -p` — Compile and optimize the files in your assets directory
+#### Build commands
+
+* `yarn start` or `npm run start` - compile assets when file changes are made, start [webpack-dev-server](https://github.com/webpack/webpack-dev-server) session
+* `yarn build` or `npm run build` - compile and optimize (the files in your assets directory) for production
 
 ## License
 
-Code released under the MIT license.
+Code released under the [MIT license](https://github.com/cichy380/html-starter-bs4-webpack/blob/master/LICENSE.md).
