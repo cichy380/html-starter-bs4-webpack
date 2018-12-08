@@ -1,0 +1,45 @@
+/*!
+ * HTML Starter 2
+ * Licensed under MIT (https://github.com/cichy380/html-starter-v2/blob/master/LICENSE.md)
+ */
+
+// 7-1 Sass Architecture (https://sass-guidelin.es/#the-7-1-pattern)
+
+// Vendors
+// - CSS from external libraries and frameworks
+@import "./vendors/bootstrap";
+
+// Abstracts
+// - tools and helpers
+@import "./abstracts/variables";
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+
+// Base
+// - standard styles for commonly elements
+@import "./base/base";
+@import "./base/helpers";
+@import "./base/fonts";
+@import "./base/typography";
+
+// Components
+// - for small, reusable pieces
+//@import "./components/buttons";
+
+// Layout
+// - everything that takes part in laying out the site
+@import "./layout/header";
+@import "./layout/sidebar";
+@import "./layout/footer";
+
+// Pages
+// - page-specific styles
+@import "./pages/home";
+@import "./pages/category";
+@import "./pages/product";
+
+// Themes
+// - for different aspects
+@import "./themes/default";
+// @import "./themes/christmas"; // snowflakes everywhere ;)
+// @import "./themes/mourning"; // funeral variant (grayscale)

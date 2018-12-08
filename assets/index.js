@@ -24,4 +24,5 @@ import '@fortawesome/fontawesome-free/js/brands' // https://fontawesome.com/icon
 // project code
 import './js/main';
 
-import './scss/index.scss';
+// styles
+import './scss/main.scss';
