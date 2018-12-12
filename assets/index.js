@@ -22,7 +22,7 @@ import '@fortawesome/fontawesome-free/js/regular' // https://fontawesome.com/ico
 import '@fortawesome/fontawesome-free/js/brands' // https://fontawesome.com/icons?d=gallery&s=brands&m=free
 
 // project code
-import './js/main';
+import './scripts/main';
 
 // styles
 import './scss/main.scss';
