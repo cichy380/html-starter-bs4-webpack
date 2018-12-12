@@ -5,8 +5,7 @@ popular development workflow.
 
 ## Features
 
-* **[Webpack 4](https://webpack.js.org/)** - module bundler (write CSS with Sass, automatically check JS 
-for errors, optimize images...)
+* **[Webpack 4](https://webpack.js.org/)** - module bundler (automatically concatenate files, write CSS with Sass, check JS for errors, optimize images...)
 * **[Bootstrap 4](http://getbootstrap.com/)** - the most popular HTML, CSS and JS framework
 * [Sass](https://sass-lang.com/) - CSS preprocessor
 * [Font Awesome 5](https://fontawesome.com/) - the web's most popular vector icons and social logos
@@ -30,7 +29,7 @@ for errors, optimize images...)
 1. Install [Node.js](http://nodejs.org/) (installation depends on your system). After finishing, you will be able to 
 check the version number using `node -v` and `npm -v` commands 
 ([npm is distributed with Node.js](https://www.npmjs.com/get-npm)).
-2. I recommend you to install the latest version of [Yarn](https://yarnpkg.com/en/docs/install).
+2. It is recommended to install the latest version of [Yarn](https://yarnpkg.com/en/docs/install).
 3. Clone the repo using `git clone https://github.com/cichy380/html-starter-bs4-webpack.git` or [download HTML Starter](https://github.com/cichy380/html-starter-bs4-webpack/archive/master.zip).
 4. Open folder **html-starter-bs4-webpack** (command: `cd html-starter-bs4-webpack`) and install necessary dependencies of Starter via command: `yarn` (recommended) or `npm install`. 
 
