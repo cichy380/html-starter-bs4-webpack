@@ -1,6 +1,7 @@
 // Vendors
-import './vendor/fontawesome'
+import './vendor/jquery'
 import './vendor/bootstrap'
+import './vendor/fontawesome'
 
 // Enables jQuery plugins
 import './plugins'
