@@ -6,5 +6,5 @@ import './vendor/fontawesome'
 // Enables jQuery plugins
 import './plugins'
 
-// Project custom code
+// Custom project code
 import './project'
