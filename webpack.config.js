@@ -59,6 +59,13 @@ module.exports = {
       },
     ],
   },
+  // DevServer
+  // https://webpack.js.org/configuration/dev-server/
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'HTML Starter - homepage',
