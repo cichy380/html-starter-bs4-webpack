@@ -51,10 +51,15 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
+        enforce: 'pre', // checked before being processed by babel-loader
         test: /\.(js)$/,
-        use: {
-          loader: "babel-loader"
-        },
+        loader: 'eslint-loader',
+        exclude: /node_modules/,
+
+      },
+      {
+        test: /\.(js)$/,
+        loader: 'babel-loader',
         exclude: /node_modules/,
       },
     ],
