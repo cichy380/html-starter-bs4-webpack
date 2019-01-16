@@ -6,7 +6,7 @@ module.exports = {
   entry: './assets/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index.bundle.js',
+    filename: './js/index.bundle.js',
   },
   // Generate sourcemaps for proper error messages
   devtool: 'source-map',
@@ -62,6 +62,15 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'file-loader',
+        options: {
+          outputPath: 'images',
+          name: '[name].[ext]',
+        },
+        exclude: /node_modules/,
+      },
     ],
   },
   // DevServer
@@ -79,12 +88,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'HTML Starter - category',
       template: './assets/html/category.htm',
-      filename: 'category.htm',
+      filename: 'category.html',
     }),
     new HtmlWebpackPlugin({
       title: 'HTML Starter - post',
       template: './assets/html/post.htm',
-      filename: 'post.htm',
+      filename: 'post.html',
     }),
     new MiniCssExtractPlugin({
       filename: './css/styles.css'
