@@ -24,13 +24,21 @@ module.exports = {
       {
         test: /\.(css|sass|scss)$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../',
+            }
+          },
           {
             loader: 'css-loader',
             options: {
               importLoaders: 2,
               sourceMap: true
             }
+          },
+          {
+            loader: 'resolve-url-loader',
           },
           {
             loader: 'postcss-loader',
@@ -46,7 +54,7 @@ module.exports = {
             options: {
               sourceMap: true
             }
-          }
+          },
         ],
         exclude: /node_modules/,
       },
@@ -67,6 +75,15 @@ module.exports = {
         loader: 'file-loader',
         options: {
           outputPath: 'images',
+          name: '[name].[ext]',
+        },
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot)(\?[a-z0-9=.]+)?$/,
+        loader: 'file-loader',
+        options: {
+          outputPath: 'fonts',
           name: '[name].[ext]',
         },
         exclude: /node_modules/,
