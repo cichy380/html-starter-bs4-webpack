@@ -1,15 +1,38 @@
-<header class="blog-header py-3">
-    <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-4 pt-1">
-            <a href="https://github.com/cichy380/html-starter-v2/" class="text-black-50">
-                <i class="fab fa-github"></i><span class="ml-1">GitHub</span>
-            </a>
-        </div>
-        <div class="col-4 text-center">
-            <a href="/" class="example-header-logo text-dark">myBlog</a>
-        </div>
-        <div class="col-4 d-flex justify-content-end align-items-center">
-            <a href="http://marcin.silversite.pl/" class="text-black-50">Contact</a>
-        </div>
+<header class="header">
+  <nav class="navbar">
+    <a class="brand navbar-brand" href="#">
+      <span class="brand__logo">
+        <i class="fab fa-html5"></i>
+      </span>
+      <span class="brand__comapny-name">Company</span>
+    </a>
+
+    <button class="navbar__toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar__collapse" id="navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="navbar-nav__item navbar-nav__item--active">
+          <a class="navbar-nav__link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="navbar-nav__item">
+          <a class="navbar-nav__link" href="#">About us</a>
+        </li>
+        <li class="navbar-nav__item">
+          <a class="navbar-nav__link" href="#">Services</a>
+        </li>
+        <li class="navbar-nav__item">
+          <a class="navbar-nav__link" href="#">Contact</a>
+        </li>
+      </ul>
+
+      <a href="//github.com/cichy380/html-starter-bs4-webpack/archive/master.zip" class="navbar__btn btn btn-sm btn-outline-primary">
+        <span class="btn__icon btn__icon--left">
+          <i class="fas fa-download"></i>
+        </span>
+        Download
+      </a>
     </div>
+  </nav>
 </header>

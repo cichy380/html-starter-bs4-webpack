@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// Brand
+// -----------------------------------------------------------------------------
+
+
+.brand {
+  display: flex;
+
+}
+
+.brand__logo {
+  display: flex;
+  height: $brand-logo-height;
+  width: $brand-logo-height;
+  margin-right: .3em;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary;
+  color: $white;
+}
+
+.brand__comapny-name {
+  font-weight: 500;
+}

@@ -1,0 +1,59 @@
+// -----------------------------------------------------------------------------
+// Navbar of the website
+// -----------------------------------------------------------------------------
+
+
+.navbar {
+  @extend .navbar-light;
+  @extend .navbar-expand-md;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__collapse {
+  @extend .navbar-collapse;
+
+  flex-grow: 0;
+}
+
+.navbar__toggler {
+  @extend .link;
+
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border-width: 0;
+
+  @include hover-focus {
+    outline: none;
+  }
+
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.navbar__btn {
+  margin-left: $navbar-nav-item-spacer;
+}
+
+.navbar-nav__item {
+  font-weight: 500;
+}
+
+.navbar-nav__item--active {
+  background-color: $light;
+}
+
+.navbar-nav__link {
+  display: inline-block;
+  padding: $nav-link-padding-y $navbar-nav-item-spacer;
+  color: $body-color;
+
+  @include hover-focus {
+    color: $link-color;
+    text-decoration: none;
+  }
+}
