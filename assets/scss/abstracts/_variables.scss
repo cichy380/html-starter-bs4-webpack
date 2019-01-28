@@ -41,7 +41,11 @@ $headings-font-weight:            600;
 
 $navbar-padding-y:                ($spacer / 2);
 $navbar-padding-x:                0;
-$navbar-nav-item-spacer:          1rem;
+$navbar-nav-item-spacer:          1.5rem;
+
+$navbar-toggler-padding-y:          0;
+$navbar-toggler-padding-x:          0;
+$navbar-toggler-font-size:          $font-size-lg;
 
 
 // Brand
