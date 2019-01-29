@@ -6,6 +6,9 @@
 // Colors
 //
 
+$white:    #fff;
+$black:    #000;
+
 $blue:    #11cdef;
 $red:     #f5365c;
 $orange:  #fb6340;
@@ -39,12 +42,10 @@ $headings-font-weight:            600;
 // Navbar
 //
 
-$navbar-padding-y:                ($spacer / 2);
-$navbar-padding-x:                0;
-$navbar-nav-item-spacer:          1.5rem;
-
-$navbar-toggler-padding-y:          0;
-$navbar-toggler-padding-x:          0;
+$navbar-padding-y:                  ($spacer / 2);
+$navbar-nav-font-size:              $font-size-sm;
+$navbar-nav-text-transform:         uppercase;
+$navbar-nav-item-spacer:            1.5rem;
 $navbar-toggler-font-size:          $font-size-lg;
 
 
@@ -54,6 +55,12 @@ $navbar-toggler-font-size:          $font-size-lg;
 $brand-font-size:                 $font-size-lg;
 $brand-logo-height:               ($brand-font-size * 1.5);
 $brand-logo-width:                ($brand-font-size * 1.5);
+
+// Components
+//
+
+$box-shadow:                         0 0 .25rem rgba($black, .10), 0 .25rem .5rem rgba($black, .20);
+$transition-shadow:                  box-shadow .2s ease-in-out;
 
 
 // Products list

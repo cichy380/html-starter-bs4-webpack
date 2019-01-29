@@ -6,6 +6,8 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  padding-left: 0; // don't want to configure
+  padding-right: 0; // don't want to configure
 }
 
 .navbar__collapse {
@@ -14,6 +16,7 @@
 
 .navbar__toggler {
   @extend .link;
+  padding: 0; // don't want to configure
 
   @include hover-focus {
     outline: none;
@@ -28,6 +31,8 @@
 
   > li {
     font-weight: 500;
+    font-size: $navbar-nav-font-size;
+    text-transform: $navbar-nav-text-transform;
 
     > a {
       display: inline-block;

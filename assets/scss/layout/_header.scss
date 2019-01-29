@@ -3,5 +3,6 @@
 // -----------------------------------------------------------------------------
 
 .header {
-
+  background-color: $body-bg;
+  @include transition($transition-shadow);
 }
