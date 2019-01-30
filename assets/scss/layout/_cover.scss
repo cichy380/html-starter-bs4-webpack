@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------
+// Cover section on Homepage
+// -----------------------------------------------------------------------------
+
+.cover {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover__infobox {
+  max-width: 35rem;
+}
+
+.cover__heading {
+  font-size: $font-size-base * 2.75;
+}
+
+.cover__lead {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-normal;
+
+  > a {
+    font-weight: $font-weight-bold;
+  }
+}
+
+.cover__btns {
+  .btn {
+    + .btn {
+      margin-left: 1em;
+    }
+  }
+}
+
+.cover__footnote {
+  font-size: $font-size-sm;
+  color: $text-muted;
+
+  > a {
+    text-decoration: none;
+    color: $text-muted;
+  }
+}
+
+.cover__footer {
+  position: absolute;
+  bottom: $spacer;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: ($font-size-base * 2);
+}
+
+.cover__scroll-down {
+  color: $gray-400;
+
+  @include hover-focus {
+    color: $gray-500;
+  }
+}

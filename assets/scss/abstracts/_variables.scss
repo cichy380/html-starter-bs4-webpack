@@ -30,13 +30,18 @@ $font-size-base:              1rem; // Assumes the browser default, typically `1
 $font-size-lg:                ($font-size-base * 1.25);
 $font-size-sm:                ($font-size-base * .875);
 
+$font-weight-light:                 300;
+$font-weight-normal:                400;
+$font-weight-bold:                  500;
+$font-weight-bolder:                900;
+
 $font-family-sans-serif:      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-base:            $font-family-sans-serif !default;
 
 $font-family-serif:               "Crimson Text", serif;
 $font-family-brand:               $font-family-serif;
-$headings-font-family:            $font-family-serif;
-$headings-font-weight:            600;
+
+$headings-font-weight:              $font-weight-bolder;
 
 
 // Navbar
@@ -59,7 +64,7 @@ $brand-logo-width:                ($brand-font-size * 1.5);
 // Components
 //
 
-$box-shadow:                         0 0 .25rem rgba($black, .10), 0 .25rem .5rem rgba($black, .20);
+$box-shadow:                         0 0 .25rem rgba($black, .10), 0 .25rem .5rem rgba($black, .05);
 $transition-shadow:                  box-shadow .2s ease-in-out;
 
 
