@@ -17,10 +17,28 @@ $green:   #2dce89;
 $primary: $orange;
 
 
+// Options
+//
+
+$enable-shadows:                    true;
+
+
 // Spacing
 //
 
 $spacer: 1rem;
+
+
+// Components
+//
+
+$border-radius:               .125rem;
+$border-radius-lg:            .1875rem;
+$border-radius-sm:            .1rem;
+
+$box-shadow:                         0 0 .25rem rgba($black, .10), 0 .25rem .5rem rgba($black, .05);
+
+$transition-shadow:                  box-shadow .2s ease-in-out;
 
 
 // Fonts
@@ -44,6 +62,40 @@ $font-family-brand:               $font-family-serif;
 $headings-font-weight:              $font-weight-bolder;
 
 
+// Buttons + Forms
+//
+
+$input-btn-padding-y:         .375rem;
+$input-btn-padding-x:         .75rem;
+
+$input-btn-padding-y-sm:      .25rem;
+$input-btn-padding-x-sm:      .5rem;
+
+$input-btn-padding-y-lg:      .5rem;
+$input-btn-padding-x-lg:      1rem;
+
+
+// Buttons
+//
+
+$btn-text-transform:                uppercase;
+$btn-box-shadow:                    0 .125rem .3125rem 0 rgba($black, .2);
+
+$btn-padding-y:                     $input-btn-padding-y;
+$btn-padding-x:                     ($input-btn-padding-x * 2);
+$btn-font-size:                     ($font-size-base * .875);
+$btn-font-weight:                   $font-weight-bold;
+
+$btn-padding-y-sm:                  $input-btn-padding-y-sm;
+$btn-padding-x-sm:                  ($input-btn-padding-x-sm * 2);
+$btn-font-size-sm:                  ($font-size-base * .8125);
+
+$btn-padding-y-lg:                  $input-btn-padding-y-lg;
+$btn-padding-x-lg:                  ($input-btn-padding-x-lg * 2);
+$btn-font-size-lg:                  $font-size-base;
+$btn-line-height-lg:                1.4375;
+
+
 // Navbar
 //
 
@@ -60,12 +112,6 @@ $navbar-toggler-font-size:          $font-size-lg;
 $brand-font-size:                 $font-size-lg;
 $brand-logo-height:               ($brand-font-size * 1.5);
 $brand-logo-width:                ($brand-font-size * 1.5);
-
-// Components
-//
-
-$box-shadow:                         0 0 .25rem rgba($black, .10), 0 .25rem .5rem rgba($black, .05);
-$transition-shadow:                  box-shadow .2s ease-in-out;
 
 
 // Products list
