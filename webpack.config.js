@@ -19,6 +19,9 @@ module.exports = {
       {
         test: /\.(html)$/,
         loader: 'html-loader',
+        options: {
+          interpolate: true,
+        },
         exclude: /node_modules/,
       },
       {
@@ -100,17 +103,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'HTML Starter - homepage',
-      template: './assets/html/index.htm',
-    }),
-    new HtmlWebpackPlugin({
-      title: 'HTML Starter - category',
-      template: './assets/html/category.htm',
-      filename: 'category.html',
-    }),
-    new HtmlWebpackPlugin({
-      title: 'HTML Starter - post',
-      template: './assets/html/post.htm',
-      filename: 'post.html',
+      template: './assets/html/index.html',
     }),
     new MiniCssExtractPlugin({
       filename: './css/styles.css'

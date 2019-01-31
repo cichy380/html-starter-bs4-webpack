@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>HTML Starter - homepage</title>
 </head>
 <body>
-<%=require('./layouts/header.html')%>
+${require('./partials/header.html')}
 
 <section class="cover">
   <div class="container cover__infobox">
@@ -50,6 +50,6 @@
   </footer>
 </section>
 
-<%=require('./layouts/footer.html')%>
+${require('./partials/footer.html')}
 </body>
 </html>
