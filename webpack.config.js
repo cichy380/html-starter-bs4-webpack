@@ -20,7 +20,10 @@ module.exports = {
         test: /\.(html)$/,
         loader: 'html-loader',
         options: {
+          // Interpolation syntax for ES6 template strings
           interpolate: true,
+          // Disable minifcation during production mode
+          minimize: false,
         },
         exclude: /node_modules/,
       },
@@ -102,8 +105,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'HTML Starter - homepage',
       template: './assets/html/index.html',
+      filename: 'index.html',
     }),
     new MiniCssExtractPlugin({
       filename: './css/styles.css'
