@@ -8,22 +8,20 @@
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
-.cover__infobox {
+.cover__inner {
   max-width: 35rem;
 }
 
 .cover__heading {
-  font-size: $font-size-base * 2.75;
+  font-size: ($font-size-base * 2.75);
 }
 
 .cover__lead {
-  font-size: $font-size-lg;
-  font-weight: $font-weight-normal;
-
   > a {
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-normal;
   }
 }
 
@@ -41,7 +39,7 @@
 
   > a {
     text-decoration: none;
-    color: $text-muted;
+    color: inherit;
   }
 }
 
@@ -55,9 +53,9 @@
 }
 
 .cover__scroll-down {
-  color: $gray-400;
+  color: $gray-500;
 
   @include hover-focus {
-    color: $gray-500;
+    color: $text-muted;
   }
 }

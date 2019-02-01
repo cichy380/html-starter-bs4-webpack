@@ -7,6 +7,15 @@
 //
 
 $white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
 $black:    #000;
 
 $blue:    #11cdef;
@@ -61,6 +70,8 @@ $font-family-brand:               $font-family-serif;
 
 $headings-font-weight:              $font-weight-bolder;
 
+$text-muted:                  lighten($gray-600, 10%);
+
 
 // Buttons + Forms
 //
@@ -91,7 +102,7 @@ $btn-padding-x-sm:                  ($input-btn-padding-x-sm * 2);
 $btn-font-size-sm:                  ($font-size-base * .8125);
 
 $btn-padding-y-lg:                  $input-btn-padding-y-lg;
-$btn-padding-x-lg:                  ($input-btn-padding-x-lg * 2);
+$btn-padding-x-lg:                  ($input-btn-padding-x-lg * 1.75);
 $btn-font-size-lg:                  $font-size-base;
 $btn-line-height-lg:                1.4375;
 
