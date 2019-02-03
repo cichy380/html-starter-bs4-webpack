@@ -23,10 +23,6 @@
   }
 }
 
-.navbar__btn {
-  margin-left: ($navbar-nav-item-spacer / 2);
-}
-
 .navbar__nav {
 
   > li {
@@ -34,14 +30,19 @@
     font-size: $navbar-nav-font-size;
     text-transform: $navbar-nav-text-transform;
 
-    > a {
+    > .nav-link {
       display: inline-block;
-      padding: $nav-link-padding-y ($navbar-nav-item-spacer / 2);
       color: $body-color;
 
       @include hover-focus {
-        color: $link-color;
+        color: $link-hover-color;
         text-decoration: none;
+      }
+    }
+
+    &:last-child {
+      > .nav-link {
+        padding-right: 0;
       }
     }
   }

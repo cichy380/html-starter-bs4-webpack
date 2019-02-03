@@ -5,7 +5,7 @@
 
 .brand {
   display: flex;
-
+  align-items: center;
 }
 
 .brand__logo {
@@ -13,6 +13,7 @@
   height: $brand-logo-height;
   width: $brand-logo-height;
   margin-right: .3em;
+  font-size: ($font-size-base * 1.3125);
   align-items: center;
   justify-content: center;
   background-color: $primary;
@@ -22,4 +23,5 @@
 .brand__company-name {
   font-weight: 500;
   color: $body-color;
+  font-size: ($font-size-base * 1);
 }
