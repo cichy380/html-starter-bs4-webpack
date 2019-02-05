@@ -37,7 +37,9 @@ $theme-colors: ();
 $theme-colors: map-merge(
   (
     "primary": $primary,
+    "facebook": $facebook,
     "twitter": $twitter,
+    "googleplus": $googleplus,
   ),
   $theme-colors
 );
@@ -131,6 +133,7 @@ $navbar-padding-y:                  ($spacer / 2);
 $navbar-nav-font-size:              $font-size-sm;
 $navbar-nav-text-transform:         uppercase;
 $navbar-nav-link-padding-x:         .75rem;
+$navbar-nav-link-social-padding-x:  .33rem;
 $navbar-toggler-font-size:          $font-size-lg;
 
 

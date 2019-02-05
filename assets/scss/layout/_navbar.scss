@@ -24,26 +24,40 @@
 }
 
 .navbar__nav {
+  margin-left: -$navbar-nav-link-padding-x;
+  margin-right: -$navbar-nav-link-padding-x;
+}
 
-  > li {
-    font-weight: 500;
-    font-size: $navbar-nav-font-size;
-    text-transform: $navbar-nav-text-transform;
+.nav__item {
+  font-weight: 500;
+  font-size: $navbar-nav-font-size;
+  text-transform: $navbar-nav-text-transform;
+  text-align: right; // for mobile
+}
 
-    > .nav-link {
-      display: inline-block;
-      color: $body-color;
+.nav__link {
+  color: $body-color;
 
-      @include hover-focus {
-        color: $link-hover-color;
-        text-decoration: none;
-      }
+  @include hover-focus {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+}
+
+.nav__item_social {
+  display: flex;
+  justify-content: flex-end;
+
+  .nav__link {
+    &:first-child:not(:last-child) {
+      padding-right: $navbar-nav-link-social-padding-x;
     }
-
-    &:last-child {
-      > .nav-link {
-        padding-right: 0;
-      }
+    &:not(:first-child):not(:last-child) {
+      padding-right: $navbar-nav-link-social-padding-x;
+      padding-left: $navbar-nav-link-social-padding-x;
+    }
+    &:not(:first-child):last-child {
+      padding-left: $navbar-nav-link-social-padding-x;
     }
   }
 }
