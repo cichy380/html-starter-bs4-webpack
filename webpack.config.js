@@ -107,6 +107,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './assets/html/index.html',
       filename: 'index.html',
+      hash: true,
     }),
     new MiniCssExtractPlugin({
       filename: './css/styles.css'
