@@ -1,5 +1,8 @@
 // JavaScript
-import './scripts/main';
+import './scripts/main'
 
 // Styles
-import './scss/main.scss';
+import './scss/main.scss'
+
+// Favicon
+import './favicon.ico'

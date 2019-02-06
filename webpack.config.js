@@ -86,6 +86,15 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
+        test: /\.(ico)$/,
+        loader: 'file-loader',
+        options: {
+          // outputPath: 'images',
+          name: '[name].[ext]',
+        },
+        exclude: /node_modules/,
+      },
+      {
         test: /\.(woff(2)?|ttf|eot)(\?[a-z0-9=.]+)?$/,
         loader: 'file-loader',
         options: {
