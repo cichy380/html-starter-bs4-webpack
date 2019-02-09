@@ -96,7 +96,11 @@ $font-family-base:            $font-family-sans-serif !default;
 $font-family-serif:               "Crimson Text", serif;
 $font-family-brand:               $font-family-serif;
 
-$headings-font-weight:              $font-weight-bolder;
+$headings-font-weight:        $font-weight-bolder;
+
+$lead-font-size:              ($font-size-base * 1.125);
+$lead-font-size-lg:           ($font-size-base * 1.25);
+$lead-font-weight:            300;
 
 $text-muted:                  lighten($gray-600, 10%);
 
@@ -174,3 +178,10 @@ $card-icon-size:                  ($font-size-base * 3);
 $card-link-text-transform:        uppercase;
 $card-link-font-size:             $font-size-sm;
 $card-link-font-weight:           $font-weight-bold;
+
+
+// Sections
+//
+
+$section-spacer:                  ($spacer * 3.75);
+$section-spacer-inner:            ($spacer * 2.25);
