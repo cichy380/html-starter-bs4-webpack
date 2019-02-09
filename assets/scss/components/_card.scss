@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// Cards
+// -----------------------------------------------------------------------------
+
+.card {
+  margin-bottom: $spacer;
+
+  @include box-shadow($card-shadow);
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
+}
+
+.card-icon {
+  font-size: $card-icon-size;
+}
+
+.card-text {
+  margin-bottom: $card-spacer-y;
+}
+
+.card-link {
+  text-transform: $card-link-text-transform;
+  font-size: $card-link-font-size;
+  font-weight: $card-link-font-weight;
+}

@@ -23,23 +23,31 @@ $red:     #f5365c;
 $orange:  #fb6340;
 $green:   #2dce89;
 
-// social
+// social/brands
 $facebook:   #3b5999;
 $twitter:    #55acee;
 $youtube:    #cd201f;
 $googleplus: #dd4b39;
 $pinterest:  #bd081c;
 $instagram:  #e4405f;
+$bootstrap:  #7952b3;
 
 $primary:    $orange;
+$success:    $green;
+$info:       $blue;
+$danger:     $red;
 
 $theme-colors: ();
 $theme-colors: map-merge(
   (
-    "primary": $primary,
-    "facebook": $facebook,
-    "twitter": $twitter,
+    "primary":    $primary,
+    "success":    $success,
+    "info":       $info,
+    "danger":     $danger,
+    "facebook":   $facebook,
+    "twitter":    $twitter,
     "googleplus": $googleplus,
+    "bootstrap":  $bootstrap,
   ),
   $theme-colors
 );
@@ -65,6 +73,7 @@ $border-radius-lg:            .1875rem;
 $border-radius-sm:            .1rem;
 
 $box-shadow:                         0 0 .25rem rgba($black, .10), 0 .25rem .5rem rgba($black, .05);
+$box-shadow-lg:                      0 0.02rem .5rem rgba($black, .10), 0 .5rem 1rem rgba($black, .05);
 
 $transition-shadow:                  box-shadow .2s ease-in-out;
 
@@ -150,3 +159,18 @@ $brand-logo-width:                ($brand-font-size * 1.5);
 
 $product-list-margin-bottom:      ($spacer * 1.5);
 $product-list-item-margin-bottom: ($spacer * 1);
+
+
+// Cards
+//
+
+$card-spacer-y:                   .75rem;
+$card-spacer-x:                   1.25rem;
+$card-border-width:               0;
+$card-border-radius:              $border-radius;
+$card-bg:                         $white;
+$card-shadow:                     $box-shadow-lg;
+$card-icon-size:                  ($font-size-base * 3);
+$card-link-text-transform:        uppercase;
+$card-link-font-size:             $font-size-sm;
+$card-link-font-weight:           $font-weight-bold;
