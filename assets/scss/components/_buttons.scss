@@ -18,3 +18,12 @@
     margin-left: .33em;
   }
 }
+
+
+// Alternate buttons
+//
+
+.btn-outline-lightborder {
+  @include button-outline-variant($body-color, $body-color, $white, $body-color);
+  border-color: $gray-400;
+}
