@@ -80,16 +80,20 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          outputPath: 'images',
+          outputPath: (url, resourcePath, context) => {
+            if (/icon\.png/.test(resourcePath)) {
+              return url;
+            }
+            return `images/${url}`;
+          },
           name: '[name].[ext]',
         },
         exclude: /node_modules/,
       },
       {
-        test: /\.(ico)$/,
+        test: /(favicon\.ico|site\.webmanifest)$/,
         loader: 'file-loader',
         options: {
-          // outputPath: 'images',
           name: '[name].[ext]',
         },
         exclude: /node_modules/,
