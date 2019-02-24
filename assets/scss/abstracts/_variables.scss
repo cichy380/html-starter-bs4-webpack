@@ -63,6 +63,20 @@ $enable-shadows:                    true;
 //
 
 $spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 2.25),
+    6: ($spacer * 3),
+    7: ($spacer * 3.75)
+  ),
+  $spacers
+);
 
 
 // Components
@@ -178,13 +192,6 @@ $card-icon-size:                  ($font-size-base * 3);
 $card-link-text-transform:        uppercase;
 $card-link-font-size:             $font-size-sm;
 $card-link-font-weight:           $font-weight-bold;
-
-
-// Sections
-//
-
-$section-spacer:                  ($spacer * 3.75);
-$section-spacer-inner:            ($spacer * 2.25);
 
 
 // Footer
