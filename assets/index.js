@@ -10,3 +10,8 @@ import './favicon.ico'
 // Web App Manifest
 import './site.webmanifest'
 import './icon.png'
+
+// Tiles for Windows 8.1
+import './browserconfig.xml'
+import './tile.png'
+import './tile-wide.png'

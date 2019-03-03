@@ -81,17 +81,19 @@ module.exports = {
         loader: 'file-loader',
         options: {
           outputPath: (url, resourcePath, context) => {
-            if (/icon\.png/.test(resourcePath)) {
+            if (/icon\.png|tile\.png|tile-wide\.png/.test(resourcePath)) {
               return url;
             }
-            return `images/${url}`;
+            else {
+              return `images/${url}`;
+            }
           },
           name: '[name].[ext]',
         },
         exclude: /node_modules/,
       },
       {
-        test: /(favicon\.ico|site\.webmanifest)$/,
+        test: /(favicon\.ico|site\.webmanifest|browserconfig\.xml)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]',
