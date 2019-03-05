@@ -15,3 +15,6 @@ import './icon.png'
 import './browserconfig.xml'
 import './tile.png'
 import './tile-wide.png'
+
+// humans.txt
+import './humans.txt'
