@@ -93,7 +93,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /(favicon\.ico|site\.webmanifest|browserconfig\.xml|humans\.txt)$/,
+        test: /(favicon\.ico|site\.webmanifest|browserconfig\.xml|robots\.txt|humans\.txt)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]',

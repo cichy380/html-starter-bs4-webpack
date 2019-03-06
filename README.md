@@ -7,6 +7,7 @@ popular development workflow.
 
 * **[Webpack 4](https://webpack.js.org/)** - module bundler (automatically concatenate files, write CSS with Sass, check JS for errors, optimize images...)
 * **[Bootstrap 4](http://getbootstrap.com/)** - the most popular HTML, CSS and JS framework
+* [HTML5 Boilerplate](https://html5boilerplate.com/) - the web’s most popular front-end template
 * [Sass](https://sass-lang.com/) - CSS preprocessor
 * [Font Awesome 5](https://fontawesome.com/) - the web's most popular vector icons and social logos
 * [Autoprefixer](https://autoprefixer.github.io/) - plugin to parse CSS and add vendor prefixes

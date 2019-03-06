@@ -16,5 +16,8 @@ import './browserconfig.xml'
 import './tile.png'
 import './tile-wide.png'
 
+// robots.txt
+import './robots.txt'
+
 // humans.txt
 import './humans.txt'
