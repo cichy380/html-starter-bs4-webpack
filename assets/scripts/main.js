@@ -3,8 +3,8 @@ import './vendor/jquery'
 import './vendor/bootstrap'
 import './vendor/fontawesome'
 
-// Enables jQuery plugins
-import './plugins'
+// jQuery plugins
+import './plugins/init'
 
 // Custom project code
 import './project'
