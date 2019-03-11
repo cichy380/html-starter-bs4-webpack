@@ -77,19 +77,32 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader',
-        options: {
-          outputPath: (url, resourcePath, context) => {
-            if (/icon\.png|tile\.png|tile-wide\.png/.test(resourcePath)) {
-              return url;
-            }
-            else {
-              return `images/${url}`;
-            }
+        test: /\.(jpe?g|png|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: (url, resourcePath, context) => {
+                if (/icon\.png|tile\.png|tile-wide\.png/.test(resourcePath)) {
+                  return url;
+                }
+                else {
+                  return `images/${url}`;
+                }
+              },
+              name: '[name].[ext]',
+            },
           },
-          name: '[name].[ext]',
-        },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 75
+              },
+            },
+          }
+        ],
         exclude: /node_modules/,
       },
       {
