@@ -14,11 +14,14 @@
   },
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack --config webpack.config.js",
-    "build": "webpack -p",
-    "start": "webpack-dev-server --mode development --open",
-    "watch": "webpack --watch",
-    "lint": "eslint assets/scripts/*.js"
+    "dev": "set NODE_ENV=development&& webpack --mode development",
+    "dev:watch": "set NODE_ENV=development&& webpack --mode development --watch",
+    "build": "set NODE_ENV=production&& webpack -p",
+    "prod": "npm run build",
+    "start": "set NODE_ENV=development&& webpack-dev-server --mode development --open",
+    "watch": "npm run dev:watch",
+    "lint": "eslint assets/scripts/*.js",
+    "clean": "rm -rf dist"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
