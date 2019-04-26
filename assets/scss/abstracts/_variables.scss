@@ -4,24 +4,42 @@
 
 
 // Colors
+// based on Material Design default palette [https://material.io/design/color/the-color-system.html]
 //
 
-$white:    #fff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
-$black:    #000;
+$white:         #fff;
+$black:         #000;
 
-$blue:    #11cdef;
-$red:     #f5365c;
-$orange:  #fb6340;
-$green:   #2dce89;
+// Blue Grey
+$gray-50:       #eceff1;
+$gray-100:      #cfd8dc;
+$gray-200:      #b0bec5;
+$gray-300:      #90a4ae;
+$gray-400:      #78909c;
+$gray-500:      #607d8b;
+$gray-600:      #546e7a;
+$gray-700:      #455a64;
+$gray-800:      #37474f;
+$gray-900:      #263238;
+
+$red:           #ef5350; // 400
+$pink:          #ec407a; // 400
+$purple:        #ab47bc; // 400
+$deep-purple:   #7e57c2; // 400
+$indigo:        #5c6bc0; // 400
+$blue:          #42a5f5; // 400
+$light-blue:    #29b6f6; // 400
+$cyan:          #26c6da; // 400
+$teal:          #26a69a; // 400
+$green:         #66bb6a; // 400
+$light-green:   #9ccc65; // 400
+$lime:          #d4e157; // 400
+$yellow:        #ffee58; // 400
+$amber:         #ffca28; // 400
+$orange:        #ffa726; // 400
+$deep-orange:   #ff7043; // 400
+$brown:         #8d6e63; // 400
+
 
 // social/brands
 $facebook:   #3b5999;
