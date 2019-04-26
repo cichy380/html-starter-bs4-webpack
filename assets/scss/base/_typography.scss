@@ -8,6 +8,19 @@
 // https://github.com/HugoGiraudel/sass-boilerplate/blob/master/stylesheets/base/_typography.scss
 
 
+// Topic
+//
+
+.topic {
+  margin-bottom: $topic-margin-bottom;
+  font-size: $topic-font-size;
+  font-weight: $topic-font-weight;
+  color: $topic-color;
+  letter-spacing: ($font-size-base * .03125); // default: 0.5px
+  text-transform: uppercase;
+}
+
+
 // Lead
 //
 

@@ -44,6 +44,6 @@
 .brand__profession {
   font-weight: $font-weight-bold;
   text-transform: uppercase;
-  font-size: ($font-size-base * .625); // default: 10px
+  font-size: $font-size-xxs; // default: 10px
   letter-spacing: ($font-size-base * .03125); // default: 0.5px
 }

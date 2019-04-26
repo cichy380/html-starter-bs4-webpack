@@ -114,19 +114,13 @@ $box-shadow-lg:                      0 0.02rem .5rem rgba($black, .10), 0 .5rem 
 $transition-shadow:                  box-shadow .2s ease-in-out;
 
 
-// Typography
-//
-
-$hr-border-color:             $light;
-$hr-border-width:             2px;
-
-
 // Fonts
 //
 
 $font-size-base:              1rem; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25);
 $font-size-sm:                ($font-size-base * .875);  // ... '14px'
+$font-size-xxs:               ($font-size-base * .625);  // ... '10px'
 
 $font-weight-light:                 300; // light
 $font-weight-normal:                400; // regular
@@ -147,6 +141,18 @@ $lead-font-size-lg:           ($font-size-base * 1.25);
 $lead-font-weight:            300;
 
 $text-muted:                  lighten($gray-600, 10%);
+
+
+// Typography
+//
+
+$topic-margin-bottom:         $spacer / 2;
+$topic-font-size:             $font-size-xxs;
+$topic-font-weight:           $font-weight-bold;
+$topic-color:                 $gray-400;
+
+$hr-border-color:             $light;
+$hr-border-width:             2px;
 
 
 // Buttons + Forms
