@@ -3,5 +3,5 @@
 // -----------------------------------------------------------------------------
 
 .content {
-  @include gradient-y($body-bg, $gray-200, 60%, 100%);
+  @include gradient-y($body-bg, $light, 60%, 100%);
 }
