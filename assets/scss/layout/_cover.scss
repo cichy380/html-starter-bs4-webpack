@@ -52,9 +52,9 @@
 }
 
 .cover__scroll-down {
-  color: $gray-500;
+  color: $gray-100;
 
   @include hover-focus {
-    color: $text-muted;
+    color: $gray-200;
   }
 }
