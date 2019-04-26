@@ -36,6 +36,7 @@ $primary:    $orange;
 $success:    $green;
 $info:       $blue;
 $danger:     $red;
+$light:      $gray-100;
 
 $theme-colors: ();
 $theme-colors: map-merge(
@@ -44,6 +45,7 @@ $theme-colors: map-merge(
     "success":    $success,
     "info":       $info,
     "danger":     $danger,
+    "light":      $light,
     "facebook":   $facebook,
     "twitter":    $twitter,
     "googleplus": $googleplus,
@@ -57,6 +59,7 @@ $theme-colors: map-merge(
 //
 
 $enable-shadows:                    true;
+$enable-gradients:                  true;
 
 
 // Spacing
