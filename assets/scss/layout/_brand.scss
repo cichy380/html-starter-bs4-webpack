@@ -5,8 +5,33 @@
 
 .brand {
   display: flex;
-  flex-direction: column;
   line-height: 1.25;
+}
+
+.brand__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand__logo {
+  margin-right: ($font-size-base * .5);
+  line-height: 1;
+  position: relative;
+}
+
+.brand__logo-img-bg {
+  font-size: ($font-size-base * 2.25); // default: 36px
+}
+
+.brand__logo-img-cover {
+  font-size: ($font-size-base * 1.125); // default: 18px
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: ($font-size-base * .5625);
+  color: $body-bg;
+  display: flex;
+  justify-content: center;
 }
 
 .brand__name {
