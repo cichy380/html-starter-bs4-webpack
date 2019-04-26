@@ -164,7 +164,7 @@ $btn-box-shadow:                    0 .125rem .3125rem 0 rgba($black, .2);
 $btn-padding-y:                     $input-btn-padding-y;
 $btn-padding-x:                     ($input-btn-padding-x * 2);
 $btn-font-size:                     ($font-size-base * .875);
-$btn-font-weight:                   $font-weight-bold;
+$btn-font-weight:                   $font-weight-medium;
 
 $btn-padding-y-sm:                  $input-btn-padding-y-sm;
 $btn-padding-x-sm:                  ($input-btn-padding-x-sm * 2);
@@ -203,7 +203,6 @@ $card-border-width:               0;
 $card-border-radius:              $border-radius;
 $card-bg:                         $white;
 $card-shadow:                     $box-shadow-lg;
-$card-icon-size:                  ($font-size-base * 3);
 $card-link-text-transform:        uppercase;
 $card-link-font-size:             $font-size-sm;
 $card-link-font-weight:           $font-weight-bold;
