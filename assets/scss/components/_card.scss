@@ -5,10 +5,13 @@
 .card {
   margin-bottom: $spacer;
 
-  @include box-shadow($card-shadow);
   @include media-breakpoint-up(md) {
     margin-bottom: 0;
   }
+}
+
+.card-shadow {
+  @include box-shadow($card-shadow);
 }
 
 .card-icon {
