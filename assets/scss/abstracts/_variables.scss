@@ -97,12 +97,13 @@ $transition-shadow:                  box-shadow .2s ease-in-out;
 
 $font-size-base:              1rem; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25);
-$font-size-sm:                ($font-size-base * .875);
+$font-size-sm:                ($font-size-base * .875);  // ... '14px'
 
-$font-weight-light:                 300;
-$font-weight-normal:                400;
-$font-weight-bold:                  500;
-$font-weight-bolder:                900;
+$font-weight-light:                 300; // light
+$font-weight-normal:                400; // regular
+$font-weight-medium:                500; // medium
+$font-weight-bold:                  700; // bold
+$font-weight-bolder:                900; // black
 
 $font-family-sans-serif:      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-base:            $font-family-sans-serif !default;
@@ -162,14 +163,6 @@ $navbar-nav-text-transform:         uppercase;
 $navbar-nav-link-padding-x:         .75rem;
 $navbar-nav-link-social-padding-x:  .33rem;
 $navbar-toggler-font-size:          $font-size-lg;
-
-
-// Brand
-//
-
-$brand-font-size:                 $font-size-lg;
-$brand-logo-height:               ($brand-font-size * 1.5);
-$brand-logo-width:                ($brand-font-size * 1.5);
 
 
 // Products list
