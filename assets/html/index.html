@@ -7,30 +7,23 @@
 ${require('./partials/header.html')}
 
 <section class="cover">
-  <div class="cover__inner container">
-    <h1 class="cover__heading">Prototype your ideas</h1>
-    <p class="cover__lead lead lead-lg">
-      HTML Starter with <a href="//webpack.js.org">Webpack</a> based setup helps you build web apps and sites much
-      faster. Kick-start your project with popular front-end development workflow.
-    </p>
-
-    <p class="cover__btns">
-      <a href="//github.com/cichy380/html-starter-v2/archive/master.zip" class="btn btn-lg btn-primary text-transform-reset">
-        <span class="btn__icon">
-           <i class="fas fa-download"></i>
-        </span>
-        <span class="btn__text">
-          Download ZIP
-        </span>
-      </a>
-    </p>
-
-    <p class="cover__footnote">
-      Source code on:
-      <a href="//github.com/cichy380/html-starter-bs4-webpack" class="text-muted">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-    </p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="cover__heading">Rehabilitacja dzieci</h1>
+        <blockquote>
+          <p class="cover__lead lead lead-lg font-italic">
+            Spokojne dzieciństwo pozwoli dzieciom patrzeć z ufnością na życie i na dzień jutrzejszy.
+          </p>
+          <footer>— Jan Paweł II</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-6">
+        <figure class="m-0">
+          <img src="//via.placeholder.com/600x600/37474f/fff" class="img-fluid" alt="">
+        </figure>
+      </div>
+    </div>
   </div>
 
   <footer class="cover__footer">
@@ -45,10 +38,113 @@ ${require('./partials/header.html')}
     <div class="container">
       <header class="row justify-content-md-center mb-5">
         <div class="col-md-7">
-          <h2 class="text-center">Front-end workflow</h2>
+          <h2 class="text-center">Oferta</h2>
           <p class="lead text-center">
             Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse pellentesque. Maecenas malesuada
             elit lectus, malesuada ultricies, Curabitur ligula.
+          </p>
+        </div>
+      </header>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-icon text-primary">
+                <i class="fas fa-fire"></i>
+              </div>
+              <h3 class="card-title">Oferta punkt #1</h3>
+              <p class="card-text">
+                Build responsive, mobile-first projects on the web with the world’s most popular front-end component
+                library.
+              </p>
+              <a href="#" class="card-link">
+                Read more<i class="fas fa-angle-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-icon text-primary">
+                <i class="fas fa-fire"></i>
+              </div>
+              <h3 class="card-title">Oferta punkt #2</h3>
+              <p class="card-text">
+                Build responsive, mobile-first projects on the web with the world’s most popular front-end component
+                library.
+              </p>
+              <a href="#" class="card-link">
+                Read more<i class="fas fa-angle-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-icon text-primary">
+                <i class="fas fa-fire"></i>
+              </div>
+              <h3 class="card-title card-title">Oferta punkt #3</h3>
+              <p class="card-text card-text">
+                Build responsive, mobile-first projects on the web with the world’s most popular front-end component
+                library.
+              </p>
+              <a href="#" class="card-link">
+                Read more<i class="fas fa-angle-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <hr>
+  </div>
+
+  <section class="py-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 align-self-center">
+          <p class="small text-muted">O MNIE</p>
+          <h2>mgr Ania Wielanek</h2>
+          <p class="lead">
+            wykształecenie / doświadczenie / gdzie obecnie pracuje / nr fizjoterapeuty ???
+          </p>
+          <p>
+            Ukończyłam fizjoterapię na ... w Łodzi. Od zawsze pasjonowała mnie praca z dziećmi, dlatego ... Każdego dnia uczę się od moich małych pacjentów pokory oraz radości nawet z tych najmniejszych rzeczy.
+          </p>
+          <button class="btn btn-primary">Przycisk</button>
+          <span class="mx-2">oraz</span>
+          <button class="btn btn-outline-lightborder">Przycisk</button>
+        </div>
+
+        <div class="col-md-4">
+          <figure class="text-center m-0">
+            <img src="//via.placeholder.com/300x400/37474f/fff" class="img-fluid" alt="">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <hr>
+  </div>
+
+  <section class="certifications py-7 bg-light">
+    <div class="container">
+      <header class="row justify-content-md-center mb-5">
+        <div class="col-md-7">
+          <h2 class="text-center">Certifications</h2>
+          <p class="lead text-center">
+            Dokumenty potwierdzające kwalifikacje (doświadczenie zawodowe), sporządzone w języku polskim lub wraz z tłumaczeniem na język polski.
           </p>
         </div>
       </header>
@@ -110,119 +206,11 @@ ${require('./partials/header.html')}
     </div>
   </section>
 
-  <section class="pt-7 pb-6">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <figure class="text-center m-0">
-            <img src="//via.placeholder.com/300x300/343a40" class="img-fluid" alt="">
-          </figure>
-        </div>
+  FAQ: Kiedy powinniśmy się skonsultować / W jaki sposób Odpowiednia fizjoterapia pomoże Twojemu dziecku
+  ważne aby wcześnie zacząć
+  pokazać jak ćwiczyć w domu
 
-        <div class="col-md-8 align-self-center">
-          <h2>Hypertext Markup Language</h2>
-          <p class="lead">
-            Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada
-            ultricies. Etiam ullamco suspendisse pellentesque. Maecenas male suadaelit lectus felis, malesuada ultricies sit amet enim.
-          </p>
-          <button class="btn btn-primary">More about HTML5</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container">
-    <hr>
-  </div>
-
-  <section class="py-6">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 align-self-center">
-          <h2>Cascading Style Sheets</h2>
-          <p class="lead">
-            Style sheet language used for describing the presentation of a document.
-          </p>
-          <p>
-            CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.
-            Provides more flexibility and control in the specification of presentation characteristics, enable multiple
-            web pages to share formatting by specifying the relevant CSS in a separate file.
-          </p>
-          <button class="btn btn-primary">More about CSS 3</button>
-          <span class="mx-2">and</span>
-          <button class="btn btn-outline-lightborder">Sass</button>
-        </div>
-
-        <div class="col-md-4">
-          <figure class="text-center m-0">
-            <img src="//via.placeholder.com/300x300/343a40" class="img-fluid" alt="">
-          </figure>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container">
-    <hr>
-  </div>
-
-  <section class="pt-6 pb-7">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <figure class="text-center m-0">
-            <img src="//via.placeholder.com/300x300/343a40" class="img-fluid" alt="">
-          </figure>
-        </div>
-
-        <div class="col-md-8 align-self-center">
-          <h2>JavaScript</h2>
-          <p class="lead">
-            JS is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a
-            language that is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.
-          </p>
-          <button class="btn btn-primary">More about JS</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div class="text-muted text-center" style="font-size: 5rem; ">
-            <i class="fab fa-fedex"></i>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div class="text-muted text-center" style="font-size: 5rem; ">
-            <i class="fab fa-angrycreative"></i>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div class="text-muted text-center" style="font-size: 5rem; ">
-            <i class="fab fa-d-and-d-beyond"></i>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div class="text-muted text-center" style="font-size: 5rem; ">
-            <i class="fab fa-dhl"></i>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div class="text-muted text-center" style="font-size: 5rem; ">
-            <i class="fab fa-zhihu"></i>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div class="text-muted text-center" style="font-size: 5rem; ">
-            <i class="fab fa-ebay"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  Kontakt: dojazd
 </main>
 
 ${require('./partials/footer.html')}

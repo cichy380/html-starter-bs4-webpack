@@ -61,6 +61,7 @@ $theme-colors: map-merge(
     "info":       $info,
     "danger":     $danger,
     "light":      $light,
+    "facebook":   $facebook,
   ),
   $theme-colors
 );
@@ -91,6 +92,13 @@ $spacers: map-merge(
   ),
   $spacers
 );
+
+
+// Body
+//
+
+$body-bg:                   $white;
+$body-color:                $gray-800;
 
 
 // Components
