@@ -4,41 +4,5 @@
 
 .footer {
   font-size: $footer-font-size;
-}
-
-.footer__nav-item {
-  margin-bottom: ($spacer * .5);
-}
-
-.footer__title {
-  margin-bottom: $spacer;
-  font-size: $footer-title-font-size;
-  text-transform: uppercase;
-  font-weight: $footer-title-font-weight;
-}
-
-.footer_theme-dark {
-  background-color: $footer-dark-bg;
-  color: $footer-dark-color;
-
-  a {
-    color: $footer-dark-link-color;
-  }
-
-  .footer__title {
-    color: $footer-dark-title-color;
-  }
-
-  .footer__hr {
-    border-top-color: $footer-dark-hr;
-  }
-
-  .footer__meta {
-    color: $footer-dark-meta-color;
-
-    a {
-      color: $footer-dark-meta-link-color;
-      text-decoration: none;
-    }
-  }
+  color: $footer-color;
 }
