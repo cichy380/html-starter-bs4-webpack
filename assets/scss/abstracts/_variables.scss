@@ -79,6 +79,22 @@ $spacers: map-merge(
 );
 
 
+// Body
+//
+
+$body-bg:                           $white;
+$body-color:                        $gray-900;
+
+
+// Links
+//
+
+$link-color:                        theme-color("primary");
+$link-decoration:                   none;
+$link-hover-color:                  darken($link-color, 15%);
+$link-hover-decoration:             underline;
+
+
 // Components
 //
 
@@ -153,23 +169,30 @@ $btn-font-size-lg:                  $font-size-base;
 $btn-line-height-lg:                1.4375;
 
 
-// Navbar
+// Header
 //
 
-$navbar-padding-y:                  ($spacer / 2);
-$navbar-nav-font-size:              $font-size-sm;
-$navbar-nav-text-transform:         uppercase;
-$navbar-nav-link-padding-x:         .75rem;
-$navbar-nav-link-social-padding-x:  .33rem;
-$navbar-toggler-font-size:          $font-size-lg;
+$header-bg:                         $body-bg;
+$header-transition:                 $transition-shadow;
 
 
 // Brand
 //
 
-$brand-font-size:                 $font-size-lg;
-$brand-logo-height:               ($brand-font-size * 1.5);
-$brand-logo-width:                ($brand-font-size * 1.5);
+$brand-font-size:                   $font-size-base;
+
+
+// Navbar
+//
+
+$navbar-nav-font-size:              $font-size-sm;
+$navbar-nav-font-weight:            $font-weight-bold;
+$navbar-nav-text-transform:         uppercase;
+$navbar-nav-color:                  $body-color;
+$navbar-nav-hover-color:            $link-hover-color;
+$navbar-nav-link-padding-x:         .75rem;
+$navbar-nav-link-social-padding-x:  .33rem;
+$navbar-toggler-font-size:          $font-size-lg;
 
 
 // Products list

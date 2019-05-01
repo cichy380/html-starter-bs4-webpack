@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// Brand
+// -----------------------------------------------------------------------------
+
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand__icon {
+  margin-right: .4em;
+  color: $primary;
+  font-size: $brand-font-size * 1.25;
+}
+
+.brand__text {
+  font-weight: $font-weight-bold;
+  color: $body-color;
+  font-size: $brand-font-size;
+}
+
+.brand_light {
+  .brand__text {
+    color: $white;
+  }
+}
