@@ -138,6 +138,11 @@ module.exports = {
       filename: 'index.html',
       hash: true,
     }),
+    new HtmlWebpackPlugin({
+      template: './assets/html/404.html',
+      filename: '404.html',
+      hash: true,
+    }),
     new MiniCssExtractPlugin({
       filename: './css/styles.css'
     }),
