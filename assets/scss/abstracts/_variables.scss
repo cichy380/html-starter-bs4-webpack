@@ -108,25 +108,26 @@ $box-shadow-lg:                      0 0.02rem .5rem rgba($black, .10), 0 .5rem 
 $transition-shadow:                  box-shadow .2s ease-in-out;
 
 
-// Fonts
+// Typography
 //
 
-$font-size-base:              1rem; // Assumes the browser default, typically `16px`
-$font-size-lg:                ($font-size-base * 1.25);
-$font-size-sm:                ($font-size-base * .875);
+$font-family-sans-serif:            Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base:                  $font-family-sans-serif;
+
+$font-size-base:                    1rem; // Assumes the browser default, typically `16px`
+$font-size-lg:                      $font-size-base * 1.25;
+$font-size-sm:                      $font-size-base * .875;
 
 $font-weight-light:                 300;
 $font-weight-normal:                400;
 $font-weight-bold:                  500;
 $font-weight-bolder:                900;
 
-$font-family-sans-serif:      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-base:            $font-family-sans-serif !default;
+$h1-font-size:                      $font-size-base * 2.75;
+$h2-font-size:                      $font-size-base * 2;
+$h3-font-size:                      $font-size-base * 1.75;
 
-$font-family-serif:               "Crimson Text", serif;
-$font-family-brand:               $font-family-serif;
-
-$headings-font-weight:        $font-weight-bolder;
+$headings-font-weight:              $font-weight-bolder;
 
 $lead-font-size:              ($font-size-base * 1.125);
 $lead-font-size-lg:           ($font-size-base * 1.25);
@@ -194,6 +195,15 @@ $navbar-nav-link-padding-x:         .75rem;
 $navbar-nav-link-social-padding-x:  .33rem;
 $navbar-toggler-font-size:          $font-size-lg;
 
+
+// Cover
+//
+
+$cover-inner-width:                 35rem;
+$cover-footnote-font-size:          $font-size-sm;
+$cover-footnote-color:              $text-muted;
+$cover-scrolldown-color:            $gray-500;
+$cover-scrolldown-hover-color:      $gray-600;
 
 // Products list
 //

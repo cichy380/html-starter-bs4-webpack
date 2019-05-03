@@ -3,40 +3,19 @@
 // -----------------------------------------------------------------------------
 
 .cover {
-  display: flex;
   position: relative;
   height: 100vh;
-  align-items: center;
-  text-align: center;
 }
 
 .cover__inner {
-  max-width: 35rem;
-}
-
-.cover__heading {
-  font-size: ($font-size-base * 2.75);
-}
-
-.cover__lead {
-  > a {
-    font-weight: $font-weight-normal;
-  }
-}
-
-.cover__btns {
-  .btn {
-    + .btn {
-      margin-left: 1em;
-    }
-  }
+  max-width: $cover-inner-width;
 }
 
 .cover__footnote {
-  font-size: $font-size-sm;
-  color: $text-muted;
+  font-size: $cover-footnote-font-size;
+  color: $cover-footnote-color;
 
-  > a {
+  a {
     text-decoration: none;
     color: inherit;
   }
@@ -48,13 +27,13 @@
   left: 0;
   right: 0;
   text-align: center;
-  font-size: ($font-size-base * 2);
+  font-size: $font-size-base * 2;
 }
 
 .cover__scroll-down {
-  color: $gray-500;
+  color: $cover-scrolldown-color;
 
   @include hover-focus {
-    color: $text-muted;
+    color: $cover-scrolldown-hover-color;
   }
 }
