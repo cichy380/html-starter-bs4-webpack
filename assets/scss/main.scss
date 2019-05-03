@@ -27,14 +27,14 @@
 // - for small, reusable pieces
 @import "./components/brand";
 @import "./components/buttons";
-@import "./components/card";
 
 // Layout
 // - everything that takes part in laying out the site
 @import "./layout/header";
-@import "./layout/cover";
-@import "./layout/sidebar";
 @import "./layout/footer";
+@import "./layout/sidebar";
+@import "./layout/cover";
+@import "./layout/services";
 
 // Pages
 // - page-specific styles
