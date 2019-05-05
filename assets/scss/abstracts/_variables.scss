@@ -6,34 +6,80 @@
 // Colors
 //
 
-$white:    #fff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
-$black:    #000;
+$white:        #fff;
+$gray-100:     #f8f9fa;
+$gray-200:     #e9ecef;
+$gray-300:     #dee2e6;
+$gray-400:     #ced4da;
+$gray-500:     #adb5bd;
+$gray-600:     #6c757d;
+$gray-700:     #495057;
+$gray-800:     #343a40;
+$gray-900:     #212529;
+$black:        #000;
 
-$blue:     #11cdef;
-$red:      #f5365c;
-$orange:   #fb6340;
-$green:    #2dce89;
+$blue:         #11cdef;
+$red:          #f5365c;
+$orange:       #fb6340;
+$green:        #2dce89;
 
-$primary:  $orange;
-$success:  $green;
-$info:     $blue;
-$danger:   $red;
+$primary:      $orange;
+$success:      $green;
+$info:         $blue;
+$danger:       $red;
+
+// social/brands
+$facebook:     #3b5999;
+$twitter:      #55acee;
+$youtube:      #cd201f;
+$googleplus:   #dd4b39;
+$pinterest:    #bd081c;
+$instagram:    #e4405f;
+$bootstrap:    #7952b3;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "success":    $success,
+    "info":       $info,
+    "danger":     $danger,
+    "facebook":   $facebook,
+    "twitter":    $twitter,
+    "googleplus": $googleplus,
+    "bootstrap":  $bootstrap,
+  ),
+  $theme-colors
+);
 
 
 // Body
 //
 
-$body-bg:      $white;
-$body-color:   $gray-900;
+$body-bg:     $white;
+$body-color:  $gray-900;
+
+
+// Links
+//
+
+$link-color:             theme-color("primary");
+$link-decoration:        none;
+$link-hover-color:       darken($link-color, 15%);
+$link-hover-decoration:  underline;
+
+
+// Components
+//
+
+$border-radius:      .125rem;
+$border-radius-lg:   .1875rem;
+$border-radius-sm:   .1rem;
+
+$box-shadow:         0 0 .25rem rgba($black, .10), 0 .25rem .5rem rgba($black, .05);
+$box-shadow-lg:      0 0.02rem .5rem rgba($black, .10), 0 .5rem 1rem rgba($black, .05);
+
+$transition-shadow:  box-shadow .2s ease-in-out;
 
 
 // Typography
@@ -61,4 +107,19 @@ $headings-font-weight:      $font-weight-bolder;
 // Header
 //
 
-$header-bg:                         $body-bg;
+$header-bg:          $body-bg;
+$header-transition:  $transition-shadow;
+
+
+// Navbar
+//
+
+$navbar-brand-font-size:            $font-size-base;
+$navbar-nav-font-size:              $font-size-sm;
+$navbar-nav-font-weight:            $font-weight-bold;
+$navbar-nav-text-transform:         uppercase;
+$navbar-nav-color:                  $body-color;
+$navbar-nav-hover-color:            $link-hover-color;
+$navbar-nav-link-padding-x:         .75rem;
+$navbar-nav-link-social-padding-x:  .33rem;
+$navbar-toggler-font-size:          $font-size-lg;

@@ -4,4 +4,49 @@
 
 .header {
   background-color: $header-bg;
+  @include transition($header-transition);
 }
+
+
+// Navbar
+//
+
+.header__navbar {
+  padding-left: 0; // don't want to configure
+  padding-right: 0; // don't want to configure
+}
+
+.header__nav-item {
+  font-weight: $navbar-nav-font-weight;
+  font-size: $navbar-nav-font-size;
+  text-transform: $navbar-nav-text-transform;
+  text-align: right; // for mobile
+}
+
+.header__nav-link {
+  color: $navbar-nav-color;
+
+  @include hover-focus {
+    color: $navbar-nav-hover-color;
+    text-decoration: none;
+  }
+}
+
+.header__nav-item_social {
+  display: flex;
+  justify-content: flex-end;
+
+  .header__nav-link {
+    &:first-child:not(:last-child) {
+      padding-right: $navbar-nav-link-social-padding-x;
+    }
+    &:not(:first-child):not(:last-child) {
+      padding-right: $navbar-nav-link-social-padding-x;
+      padding-left: $navbar-nav-link-social-padding-x;
+    }
+    &:not(:first-child):last-child {
+      padding-left: $navbar-nav-link-social-padding-x;
+    }
+  }
+}
+
