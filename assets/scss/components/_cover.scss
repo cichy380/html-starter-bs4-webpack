@@ -1,0 +1,39 @@
+// -----------------------------------------------------------------------------
+// Cover section on Homepage
+// -----------------------------------------------------------------------------
+
+.cover {
+  position: relative;
+  height: 100vh;
+}
+
+.cover__inner {
+  max-width: $cover-inner-width;
+}
+
+.cover__footnote {
+  font-size: $cover-footnote-font-size;
+  color: $cover-footnote-color;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.cover__footer {
+  position: absolute;
+  bottom: $spacer;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: $font-size-base * 2;
+}
+
+.cover__scroll-down {
+  color: $cover-scrolldown-color;
+
+  @include hover-focus {
+    color: $cover-scrolldown-hover-color;
+  }
+}

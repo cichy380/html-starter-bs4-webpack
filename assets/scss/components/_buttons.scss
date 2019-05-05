@@ -1,3 +1,20 @@
 // -----------------------------------------------------------------------------
 // Button component
 // -----------------------------------------------------------------------------
+
+.btn {
+  text-transform: $btn-text-transform;
+  font-weight: $btn-font-weight;
+}
+
+.btn__icon {
+  + .btn__text {
+    margin-left: .33em;
+  }
+}
+
+.btn__text {
+  + .btn__icon {
+    margin-left: .33em;
+  }
+}
