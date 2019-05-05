@@ -42,6 +42,11 @@ You now have all the necessary dependencies to run the build process. HTML Start
 * `yarn start` or `npm run start` - compile assets when file changes are made, start [webpack-dev-server](https://github.com/webpack/webpack-dev-server) session
 * `yarn build` or `npm run build` - compile and optimize (the files in your assets directory) for production
 
+## Demo
+
+Sample of template usage in:
+ * simple corporate website on [demo branch](https://github.com/cichy380/html-starter-bs4-webpack/tree/demo)
+
 ## License
 
 Code released under the [MIT license](https://github.com/cichy380/html-starter-bs4-webpack/blob/master/LICENSE.md).
