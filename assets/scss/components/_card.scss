@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// Card component
+// -----------------------------------------------------------------------------
+
+.card-icon {
+  font-size: $card-icon-size;
+}
+
+.card-text {
+  margin-bottom: $card-spacer-y;
+}
+
+.card-link {
+  font-size: $card-link-font-size;
+  font-weight: $card-link-font-weight;
+}

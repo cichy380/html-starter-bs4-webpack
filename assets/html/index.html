@@ -12,7 +12,8 @@ ${require('./partials/header.html')}
 <section class="cover d-flex justify-content-center align-items-center">
   <div class="cover__inner text-center container">
     <h1>Prototype your ideas</h1>
-    <p class="lead lead-lg">
+
+    <p class="lead lead-lg mb-4">
       HTML Starter with Webpack based setup helps you build web apps and sites much faster.
       Kick-start your project with popular front-end development workflow.
     </p>
@@ -42,5 +43,76 @@ ${require('./partials/header.html')}
     </a>
   </footer>
 </section>
+
+<main id="content">
+  <section class="services py-7 bg-light">
+    <div class="container">
+      <header class="row justify-content-md-center mb-4">
+        <div class="col-md-7">
+          <h2 class="text-center">Front-end workflow</h2>
+          <p class="lead text-center">
+            Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse pellentesque. Maecenas malesuada
+            elit lectus, malesuada ultricies, Curabitur ligula.
+          </p>
+        </div>
+      </header>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="services__card card">
+            <div class="card-body">
+              <div class="card-icon text-danger">
+                <i class="fas fa-fire"></i>
+              </div>
+              <h3 class="card-title">Webpack bundler</h3>
+              <p class="card-text">
+                Write CSS with Sass, automatically concatenate, check and optimize your code, enable live reloading.
+              </p>
+              <a href="//webpack.js.org/" class="card-link text-uppercase text-danger">
+                Read more<i class="fas fa-angle-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="services__card card">
+            <div class="card-body">
+              <div class="card-icon text-bootstrap">
+                <i class="fab fa-twitter"></i>
+              </div>
+              <h3 class="card-title">Bootstrap library</h3>
+              <p class="card-text">
+                Build responsive, mobile-first projects on the web with the world’s most popular front-end component
+                library.
+              </p>
+              <a href="//getbootstrap.com/" class="card-link text-uppercase text-bootstrap">
+                Read more<i class="fas fa-angle-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="services__card card">
+            <div class="card-body">
+              <div class="card-icon text-success">
+                <i class="fab fa-sass"></i>
+              </div>
+              <h3 class="card-title">Sass architecture</h3>
+              <p class="card-text card-text">
+                Keep your Sass consistent and meaningful. 7-1 is the way that helps you quickly and easily
+                find and isolate your styles.
+              </p>
+              <a href="//sass-guidelin.es/#architecture" class="card-link text-uppercase text-success">
+                Read more<i class="fas fa-angle-right ml-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 </body>
 </html>

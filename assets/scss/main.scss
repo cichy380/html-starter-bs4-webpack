@@ -22,12 +22,14 @@
 // Components
 // - for small, reusable pieces
 @import "./components/buttons";
+@import "./components/card";
 @import "./components/cover";
 
 // Layout
 // - everything that takes part in laying out the site/application
 @import "./layout/header";
 @import "./layout/footer";
+@import "./layout/services";
 
 // Pages
 // - page-specific styles

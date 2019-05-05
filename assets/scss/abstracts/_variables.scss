@@ -59,11 +59,31 @@ $theme-colors: map-merge(
 $enable-shadows:  true;
 
 
+// Spacing
+//
+
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 2.25),
+    6: ($spacer * 3),
+    7: ($spacer * 3.75)
+  ),
+  $spacers
+);
+
+
 // Body
 //
 
 $body-bg:     $white;
-$body-color:  $gray-900;
+$body-color:  $gray-700;
 
 
 // Links
@@ -108,6 +128,11 @@ $h2-font-size:            $font-size-base * 2;
 $h3-font-size:            $font-size-base * 1.75;
 
 $headings-font-weight:    $font-weight-bolder;
+$headings-color:          $gray-900;
+
+$lead-font-size:          $font-size-base * 1.125;
+$lead-font-size-lg:       $font-size-base * 1.25;
+$lead-font-weight:        300;
 
 
 // Buttons + Forms
@@ -158,11 +183,30 @@ $navbar-brand-font-size:            $font-size-base;
 $navbar-nav-font-size:              $font-size-sm;
 $navbar-nav-font-weight:            $font-weight-bold;
 $navbar-nav-text-transform:         uppercase;
-$navbar-nav-color:                  $body-color;
+$navbar-nav-color:                  $gray-900;
 $navbar-nav-hover-color:            $link-hover-color;
 $navbar-nav-link-padding-x:         .75rem;
 $navbar-nav-link-social-padding-x:  .33rem;
 $navbar-toggler-font-size:          $font-size-lg;
+
+
+// Services
+//
+
+$services-card-shadow:  $box-shadow-lg;
+
+
+// Cards
+//
+
+$card-spacer-y:                   .75rem;
+$card-spacer-x:                   1.25rem;
+$card-border-width:               0;
+$card-border-radius:              $border-radius;
+$card-bg:                         $white;
+$card-icon-size:                  ($font-size-base * 3);
+$card-link-font-size:             $font-size-sm;
+$card-link-font-weight:           $font-weight-bold;
 
 
 // Cover

@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// Services section
+// -----------------------------------------------------------------------------
+
+.services {
+
+}
+
+
+// Card
+//
+
+.services__card {
+  margin-bottom: $spacer; // mobile
+
+  @include box-shadow($services-card-shadow);
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
+}
