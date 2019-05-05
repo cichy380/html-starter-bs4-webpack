@@ -7,17 +7,17 @@
   ${require('./partials/head.html')}
 </head>
 <body>
-<div class="d-flex flex-column h-100">
-  ${require('./partials/header.html')}
+${require('./partials/header.html')}
 
-  <main class="d-flex h-100 align-items-center">
-    <div class="container">
-      <h1>Page Not Found</h1>
-      <p class="lead">Sorry, but the page you were trying to view does not exist.</p>
-    </div>
-  </main>
+<main class="cover d-flex justify-content-center align-items-center">
+  <div class="cover__inner text-center container">
+    <h1>Page Not Found</h1>
+    <p class="lead lead-lg">
+      Sorry, but the page you were trying to view does not exist.
+    </p>
+  </div>
+</main>
 
-  ${require('./partials/footer.html')}
-</div>
+${require('./partials/footer.html')}
 </body>
 </html>
