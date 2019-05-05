@@ -6,31 +6,3 @@
 //
 // example:
 // https://github.com/HugoGiraudel/sass-boilerplate/blob/master/stylesheets/base/_typography.scss
-
-
-// Lead
-//
-
-.lead {
-  font-size: $lead-font-size;
-  font-weight: $lead-font-weight;
-}
-
-.lead-lg {
-  font-size: $lead-font-size-lg;
-}
-
-
-// Lists
-//
-
-.list-iconed {
-  @include list-unstyled;
-}
-
-.list-iconed-icon {
-  display: inline-block;
-  width: 1.25em;
-  color: $primary;
-  text-align: center;
-}

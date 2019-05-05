@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
+  <meta charset="utf-8">
+  <title>Page Not Found</title>
+  <meta name="description" content="">
   ${require('./partials/head.html')}
 </head>
 <body>
-${require('./partials/header.html')}
+<div class="d-flex flex-column h-100">
+  ${require('./partials/header.html')}
 
-<main class="cover d-flex justify-content-center align-items-center">
-  <div class="cover__inner text-center container">
-    <h1>Page Not Found</h1>
-    <p class="lead lead-lg">
-      Sorry, but the page you were trying to view does not exist.
-    </p>
-  </div>
-</main>
+  <main class="d-flex h-100 align-items-center">
+    <div class="container">
+      <h1>Page Not Found</h1>
+      <p class="lead">Sorry, but the page you were trying to view does not exist.</p>
+    </div>
+  </main>
 
-${require('./partials/footer.html')}
+  ${require('./partials/footer.html')}
+</div>
 </body>
 </html>

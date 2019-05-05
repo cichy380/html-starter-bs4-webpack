@@ -1,230 +1,29 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
+  <meta charset="utf-8">
+  <title>HTML Starter</title>
+  <meta name="description" content="">
   ${require('./partials/head.html')}
 </head>
 <body>
-${require('./partials/header.html')}
+${require('./partials/browserupgrade.html')}
+<div class="d-flex flex-column h-100">
+  ${require('./partials/header.html')}
 
-<section class="cover d-flex justify-content-center align-items-center">
-  <div class="cover__inner text-center container">
-    <h1>Prototype your ideas</h1>
-    <p class="lead lead-lg">
-      HTML Starter with Webpack based setup helps you build web apps and sites much faster.
-      Kick-start your project with popular front-end development workflow.
-    </p>
-
-    <p>
-      <a href="//github.com/cichy380/html-starter-v2/archive/master.zip" class="btn btn-lg btn-primary text-transform-reset">
-        <span class="btn__icon">
-           <i class="fas fa-download"></i>
-        </span>
-        <span class="btn__text">
-          Download ZIP
-        </span>
-      </a>
-    </p>
-
-    <p class="cover__footnote">
-      Source code on:
-      <a href="//github.com/cichy380/html-starter-bs4-webpack">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-    </p>
-  </div>
-
-  <footer class="cover__footer">
-    <a href="#content" class="cover__scroll-down">
-      <i class="fas fa-angle-double-down"></i>
-    </a>
-  </footer>
-</section>
-
-<main id="content">
-  <section class="services py-7 bg-light">
+  <main class="d-flex h-100 align-items-center">
     <div class="container">
-      <header class="row justify-content-md-center mb-5">
-        <div class="col-md-7">
-          <h2 class="text-center">Front-end workflow</h2>
-          <p class="lead text-center">
-            Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse pellentesque. Maecenas malesuada
-            elit lectus, malesuada ultricies, Curabitur ligula.
-          </p>
-        </div>
-      </header>
-
-      <div class="row">
-        <div class="col-md-4">
-          <div class="services__card card">
-            <div class="card-body">
-              <div class="services__card-icon text-danger">
-                <i class="fas fa-fire"></i>
-              </div>
-              <h3 class="card-title">Webpack bundler</h3>
-              <p class="services__card-text">
-                Write CSS with Sass, automatically concatenate, check and optimize your code, enable live reloading.
-              </p>
-              <a href="//webpack.js.org/" class="services__card-link text-danger">
-                Read more<i class="fas fa-angle-right ml-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="services__card card">
-            <div class="card-body">
-              <div class="services__card-icon text-bootstrap">
-                <i class="fab fa-twitter"></i>
-              </div>
-              <h3 class="card-title">Bootstrap library</h3>
-              <p class="services__card-text">
-                Build responsive, mobile-first projects on the web with the world’s most popular front-end component
-                library.
-              </p>
-              <a href="//getbootstrap.com/" class="services__card-link text-bootstrap">
-                Read more<i class="fas fa-angle-right ml-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="services__card card">
-            <div class="card-body">
-              <div class="services__card-icon text-success">
-                <i class="fab fa-sass"></i>
-              </div>
-              <h3 class="card-title">Sass architecture</h3>
-              <p class="services__card-text card-text">
-                Keep your Sass consistent and meaningful. 7-1 is the way that helps you quickly and easily
-                find and isolate your styles.
-              </p>
-              <a href="//sass-guidelin.es/#architecture" class="services__card-link text-success">
-                Read more<i class="fas fa-angle-right ml-1"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <section style="max-width: 35rem">
+        <h1>Prototype your ideas</h1>
+        <p class="lead">
+          HTML Starter with Webpack based setup helps you build web apps and sites much faster.
+          Kick-start your project with popular front-end development workflow.
+        </p>
+      </section>
     </div>
-  </section>
+  </main>
 
-  <section class="pt-7 pb-6">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <figure class="text-center m-0">
-            <img src="//via.placeholder.com/300x300/343a40" class="img-fluid" alt="">
-          </figure>
-        </div>
-
-        <div class="col-md-8 align-self-center">
-          <h2>Hypertext Markup Language</h2>
-          <p class="lead">
-            Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada
-            ultricies. Etiam ullamco suspendisse pellentesque. Maecenas male suadaelit lectus felis, malesuada ultricies sit amet enim.
-          </p>
-          <button class="btn btn-primary">More about HTML5</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container">
-    <hr>
-  </div>
-
-  <section class="py-6">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 align-self-center">
-          <h2>Cascading Style Sheets</h2>
-          <p class="lead">
-            Style sheet language used for describing the presentation of a document.
-          </p>
-          <p>
-            CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.
-            Provides more flexibility and control in the specification of presentation characteristics, enable multiple
-            web pages to share formatting by specifying the relevant CSS in a separate file.
-          </p>
-          <button class="btn btn-primary">More about CSS 3</button>
-          <span class="mx-2">and</span>
-          <button class="btn btn-outline-lightborder">Sass</button>
-        </div>
-
-        <div class="col-md-4">
-          <figure class="text-center m-0">
-            <img src="//via.placeholder.com/300x300/343a40" class="img-fluid" alt="">
-          </figure>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container">
-    <hr>
-  </div>
-
-  <section class="pt-6 pb-7">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <figure class="text-center m-0">
-            <img src="//via.placeholder.com/300x300/343a40" class="img-fluid" alt="">
-          </figure>
-        </div>
-
-        <div class="col-md-8 align-self-center">
-          <h2>JavaScript</h2>
-          <p class="lead">
-            JS is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a
-            language that is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.
-          </p>
-          <button class="btn btn-primary">More about JS</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div class="text-muted text-center" style="font-size: 5rem; ">
-            <i class="fab fa-fedex"></i>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div class="text-muted text-center" style="font-size: 5rem; ">
-            <i class="fab fa-angrycreative"></i>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div class="text-muted text-center" style="font-size: 5rem; ">
-            <i class="fab fa-d-and-d-beyond"></i>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div class="text-muted text-center" style="font-size: 5rem; ">
-            <i class="fab fa-dhl"></i>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div class="text-muted text-center" style="font-size: 5rem; ">
-            <i class="fab fa-zhihu"></i>
-          </div>
-        </div>
-        <div class="col-6 col-sm-4 col-lg-2">
-          <div class="text-muted text-center" style="font-size: 5rem; ">
-            <i class="fab fa-ebay"></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-${require('./partials/footer.html')}
+  ${require('./partials/footer.html')}
+</div>
 </body>
 </html>

@@ -1,9 +1,5 @@
-/*!
- * HTML Starter 2
- * Licensed under MIT (https://github.com/cichy380/html-starter-v2/blob/master/LICENSE.md)
- */
-
-// 7-1 Sass Architecture (https://sass-guidelin.es/#the-7-1-pattern)
+// 7-1 Sass Architecture
+// https://sass-guidelin.es/#the-7-1-pattern
 
 // Abstracts
 // - tools and helpers
@@ -25,25 +21,17 @@
 
 // Components
 // - for small, reusable pieces
-@import "./components/brand";
 @import "./components/buttons";
 
 // Layout
-// - everything that takes part in laying out the site
+// - everything that takes part in laying out the site/application
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/sidebar";
-@import "./layout/cover";
-@import "./layout/services";
 
 // Pages
 // - page-specific styles
 @import "./pages/home";
-@import "./pages/category";
-@import "./pages/product";
 
 // Themes
 // - for different aspects
 @import "./themes/default";
-// @import "./themes/christmas"; // snowflakes everywhere ;)
-// @import "./themes/mourning"; // funeral variant (grayscale)

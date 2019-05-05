@@ -18,226 +18,47 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
 
-$blue:    #11cdef;
-$red:     #f5365c;
-$orange:  #fb6340;
-$green:   #2dce89;
+$blue:     #11cdef;
+$red:      #f5365c;
+$orange:   #fb6340;
+$green:    #2dce89;
 
-// social/brands
-$facebook:   #3b5999;
-$twitter:    #55acee;
-$youtube:    #cd201f;
-$googleplus: #dd4b39;
-$pinterest:  #bd081c;
-$instagram:  #e4405f;
-$bootstrap:  #7952b3;
-
-$primary:    $orange;
-$success:    $green;
-$info:       $blue;
-$danger:     $red;
-
-$theme-colors: ();
-$theme-colors: map-merge(
-  (
-    "primary":    $primary,
-    "success":    $success,
-    "info":       $info,
-    "danger":     $danger,
-    "facebook":   $facebook,
-    "twitter":    $twitter,
-    "googleplus": $googleplus,
-    "bootstrap":  $bootstrap,
-  ),
-  $theme-colors
-);
-
-
-// Options
-//
-
-$enable-shadows:                    true;
-
-
-// Spacing
-//
-
-$spacer: 1rem;
-$spacers: ();
-$spacers: map-merge(
-  (
-    0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 2.25),
-    6: ($spacer * 3),
-    7: ($spacer * 3.75)
-  ),
-  $spacers
-);
+$primary:  $orange;
+$success:  $green;
+$info:     $blue;
+$danger:   $red;
 
 
 // Body
 //
 
-$body-bg:                           $white;
-$body-color:                        $gray-900;
-
-
-// Links
-//
-
-$link-color:                        theme-color("primary");
-$link-decoration:                   none;
-$link-hover-color:                  darken($link-color, 15%);
-$link-hover-decoration:             underline;
-
-
-// Components
-//
-
-$border-radius:               .125rem;
-$border-radius-lg:            .1875rem;
-$border-radius-sm:            .1rem;
-
-$box-shadow:                         0 0 .25rem rgba($black, .10), 0 .25rem .5rem rgba($black, .05);
-$box-shadow-lg:                      0 0.02rem .5rem rgba($black, .10), 0 .5rem 1rem rgba($black, .05);
-
-$transition-shadow:                  box-shadow .2s ease-in-out;
+$body-bg:      $white;
+$body-color:   $gray-900;
 
 
 // Typography
 //
 
-$font-family-sans-serif:            Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-base:                  $font-family-sans-serif;
+$font-family-sans-serif:    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base:          $font-family-sans-serif;
 
-$font-size-base:                    1rem; // Assumes the browser default, typically `16px`
-$font-size-lg:                      $font-size-base * 1.25;
-$font-size-sm:                      $font-size-base * .875;
+$font-size-base:            1rem; // Assumes the browser default, typically `16px`
+$font-size-lg:              $font-size-base * 1.25;
+$font-size-sm:              $font-size-base * .875;
 
-$font-weight-light:                 300;
-$font-weight-normal:                400;
-$font-weight-bold:                  500;
-$font-weight-bolder:                900;
+$font-weight-light:         300;
+$font-weight-normal:        400;
+$font-weight-bold:          500;
+$font-weight-bolder:        900;
 
-$h1-font-size:                      $font-size-base * 2.75;
-$h2-font-size:                      $font-size-base * 2;
-$h3-font-size:                      $font-size-base * 1.75;
+$h1-font-size:              $font-size-base * 2.75;
+$h2-font-size:              $font-size-base * 2;
+$h3-font-size:              $font-size-base * 1.75;
 
-$headings-font-weight:              $font-weight-bolder;
-
-$lead-font-size:              ($font-size-base * 1.125);
-$lead-font-size-lg:           ($font-size-base * 1.25);
-$lead-font-weight:            300;
-
-$text-muted:                  lighten($gray-600, 10%);
-
-
-// Buttons + Forms
-//
-
-$input-btn-padding-y:         .375rem;
-$input-btn-padding-x:         .75rem;
-
-$input-btn-padding-y-sm:      .25rem;
-$input-btn-padding-x-sm:      .5rem;
-
-$input-btn-padding-y-lg:      .5rem;
-$input-btn-padding-x-lg:      1rem;
-
-
-// Buttons
-//
-
-$btn-text-transform:                uppercase;
-$btn-box-shadow:                    0 .125rem .3125rem 0 rgba($black, .2);
-
-$btn-padding-y:                     $input-btn-padding-y;
-$btn-padding-x:                     ($input-btn-padding-x * 2);
-$btn-font-size:                     ($font-size-base * .875);
-$btn-font-weight:                   $font-weight-bold;
-
-$btn-padding-y-sm:                  $input-btn-padding-y-sm;
-$btn-padding-x-sm:                  ($input-btn-padding-x-sm * 2);
-$btn-font-size-sm:                  ($font-size-base * .8125);
-
-$btn-padding-y-lg:                  $input-btn-padding-y-lg;
-$btn-padding-x-lg:                  ($input-btn-padding-x-lg * 1.75);
-$btn-font-size-lg:                  $font-size-base;
-$btn-line-height-lg:                1.4375;
+$headings-font-weight:      $font-weight-bolder;
 
 
 // Header
 //
 
 $header-bg:                         $body-bg;
-$header-transition:                 $transition-shadow;
-
-
-// Brand
-//
-
-$brand-font-size:                   $font-size-base;
-
-
-// Navbar
-//
-
-$navbar-nav-font-size:              $font-size-sm;
-$navbar-nav-font-weight:            $font-weight-bold;
-$navbar-nav-text-transform:         uppercase;
-$navbar-nav-color:                  $body-color;
-$navbar-nav-hover-color:            $link-hover-color;
-$navbar-nav-link-padding-x:         .75rem;
-$navbar-nav-link-social-padding-x:  .33rem;
-$navbar-toggler-font-size:          $font-size-lg;
-
-
-// Cover
-//
-
-$cover-inner-width:                 35rem;
-$cover-footnote-font-size:          $font-size-sm;
-$cover-footnote-color:              $text-muted;
-$cover-scrolldown-color:            $gray-500;
-$cover-scrolldown-hover-color:      $gray-600;
-
-// Products list
-//
-
-$product-list-margin-bottom:      ($spacer * 1.5);
-$product-list-item-margin-bottom: ($spacer * 1);
-
-
-// Cards
-//
-
-$card-spacer-y:                   .75rem;
-$card-spacer-x:                   1.25rem;
-$card-border-width:               0;
-$card-border-radius:              $border-radius;
-$card-bg:                         $white;
-$card-shadow:                     $box-shadow-lg;
-$card-icon-size:                  ($font-size-base * 3);
-$card-link-text-transform:        uppercase;
-$card-link-font-size:             $font-size-sm;
-$card-link-font-weight:           $font-weight-bold;
-
-
-// Footer
-//
-
-$footer-font-size:                $font-size-sm;
-$footer-title-font-size:          $font-size-sm;
-$footer-title-font-weight:        $font-weight-bold;
-
-$footer-dark-bg:                  $gray-800;
-$footer-dark-color:               $gray-500;
-$footer-dark-link-color:          $gray-500;
-$footer-dark-title-color:         $gray-100;
-$footer-dark-hr:                  $gray-700;
-$footer-dark-meta-color:          $gray-600;
-$footer-dark-meta-link-color:     $gray-100;

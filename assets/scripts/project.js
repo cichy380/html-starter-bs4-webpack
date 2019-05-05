@@ -1,3 +1,0 @@
-/**
- * @fileoverview Custom project code...
- */
