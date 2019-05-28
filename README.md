@@ -1,4 +1,12 @@
+<img src="http://marcin.silversite.pl/html-starter-bs4-webpack/logo.png" width="245" height="95" alt="">
+
 # HTML Starter
+
+[![Bootstrap](https://flat.badgen.net/badge/bootstrap/4.3/7952b3)](https://getbootstrap.com)
+[![Webpack](https://flat.badgen.net/badge/webpack/4/14aaf3)](https://webpack.js.org)
+[![dependencies](https://flat.badgen.net/david/dep/cichy380/html-starter-bs4-webpack)](https://david-dm.org/cichy380/html-starter-bs4-webpack)
+[![devDependencies](https://flat.badgen.net/david/dev/cichy380/html-starter-bs4-webpack)](https://david-dm.org/cichy380/html-starter-bs4-webpack?type=dev)
+[![license](https://flat.badgen.net/github/license/cichy380/html-starter-bs4-webpack)](https://github.com/cichy380/html-starter-bs4-webpack/blob/master/LICENSE.md)
 
 Kick-start your project with [Bootstrap](https://getbootstrap.com/), the world's most popular framework and modern development workflow.
 This boilerplate with [Webpack](https://webpack.js.org/) based setup helps you build web apps and sites much faster.
@@ -32,60 +40,60 @@ This boilerplate with [Webpack](https://webpack.js.org/) based setup helps you b
 check the version number using `node -v` and `npm -v` commands 
 ([npm is distributed with Node.js](https://www.npmjs.com/get-npm)).
 2. It is recommended to install the latest version of [Yarn](https://yarnpkg.com/en/docs/install).
-3. Clone the repo using `git clone https://github.com/cichy380/html-starter-bs4-webpack.git` or [download HTML Starter](https://github.com/cichy380/html-starter-bs4-webpack/archive/master.zip).
-4. Open folder **html-starter-bs4-webpack** (command: `cd html-starter-bs4-webpack`) and install necessary dependencies of Starter via command: `yarn` (recommended) or `npm install`. 
+3. Clone the repo using `git clone https://github.com/cichy380/html-starter-bs4-webpack.git` or [download *HTML Starter*](https://github.com/cichy380/html-starter-bs4-webpack/archive/master.zip).
+4. Open folder **html-starter-bs4-webpack** (command: `cd html-starter-bs4-webpack`) and install a packages of *HTML Starter* via command: `yarn` or `npm install`. 
 
-You now have all the necessary dependencies to run the build process.
+Now you have everything you need to run the build process.
 
 #### Build commands
 
 * `yarn start` or `npm run start` ─ compile assets when file changes are made, start [webpack-dev-server](https://github.com/webpack/webpack-dev-server) session
 * `yarn build` or `npm run build` ─ compile and optimize (the files in your assets directory) for production
 
-### Structure
+## Structure
 
 Shorten directories and files structure which you'll see after build: 
 
-```
+```shell
 html-starter-bs4-webpack/
-├── assets/                         # template assets
-│   ├── fonts/                      # place template fonts files here
-│   ├── html/                       # template HTML files
-│   │  ├── partials/                # common parts of HTML code
+├── assets/                 # template assets
+│   ├── fonts/              # place template fonts files here
+│   ├── html/               # template HTML files
+│   │  ├── partials/        # common parts of HTML code
 │   │  │  └── [...]
-│   │  ├── 404.html                 # placeholder 404 error page
-│   │  └── index.html               # default HTML skeleton
-│   ├── images/                     # template images files
+│   │  ├── 404.html         # placeholder 404 error page
+│   │  └── index.html       # default HTML skeleton
+│   ├── images/             # template images files
 │   │  └── [...]
-│   ├── scripts/                    # template javascript files
-│   │  ├── vendor/                  # necessary parts of frameworks and libs
-│   │  │  └── [...]                 # Bootstrap, FontAwesome, jQuery
-│   │  └── main.js                  # main javascript file that references JS source files
-│   ├── scss/                       # template styles
-│   │  ├── [...]                    # 7-1 Sass architecture folders
-│   │  └── main.scss                # main Sass file that references scss source files
-│   ├── index.js                    # entry point of template
-│   └── [...]                       # miscellaneous
-├── dist/                           # output folder with production build (don't edit)
-│   ├── css/                        # output styles
-│   ├── images/                     # output images
-│   ├── js/                         # output javascripts
-│   ├── index.html                  # homepage
-│   └── [...]                       # miscellaneous
-├── node_modules/                   # Node.js packages (don't edit)
+│   ├── scripts/            # template javascript files
+│   │  ├── vendor/          # necessary parts of frameworks and libs
+│   │  │  └── [...]         # Bootstrap, FontAwesome, jQuery
+│   │  └── main.js          # main javascript file that references JS source files
+│   ├── scss/               # template styles
+│   │  ├── [...]            # 7-1 Sass architecture folders
+│   │  └── main.scss        # main Sass file that references scss source files
+│   ├── index.js            # entry point of template
+│   └── [...]               # miscellaneous
+├── dist/                   # output folder with production build (don't edit)
+│   ├── css/                # output styles
+│   ├── images/             # output images
+│   ├── js/                 # output javascripts
+│   ├── index.html          # homepage
+│   └── [...]               # miscellaneous
+├── node_modules/           # Node.js packages (don't edit)
 │   └── [...]
-├── .babelrc                        # Babel configuration file
-├── .eslintrc.js                    # ESLint configuration file
-├── package.json                    # Node.js dependencies and scripts
-├── webpack.config.js               # Webpack configuration file
-├── yarn.lock                       # Yarn lock file (don't edit)
-└── [...]                           # other...
+├── .babelrc                # Babel configuration file
+├── .eslintrc.js            # ESLint configuration file
+├── package.json            # Node.js dependencies and scripts
+├── webpack.config.js       # Webpack configuration file
+├── yarn.lock               # Yarn lock file (don't edit)
+└── [...]                   # other...
 ```
 
 ## Demo
 
 Sample of *HTML Starter* usage placed in separate branche:
- * [demo branch](https://github.com/cichy380/html-starter-bs4-webpack/tree/demo) - simple corporate website
+ * [demo branch](https://github.com/cichy380/html-starter-bs4-webpack/tree/demo) ─ simple corporate website
 
 ## License
 
