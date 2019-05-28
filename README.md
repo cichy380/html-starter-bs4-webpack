@@ -1,4 +1,4 @@
-<img src="http://marcin.silversite.pl/html-starter-bs4-webpack/logo.png" width="245" height="95" alt="">
+<img src="http://marcin.silversite.pl/html-starter-bs4-webpack/logo-small.png" width="150" height="58" alt="">
 
 # HTML Starter
 
