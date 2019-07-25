@@ -13,21 +13,21 @@ This boilerplate with [Webpack](https://webpack.js.org/) based setup helps you b
 
 ## Features
 
-* **[Webpack 4](https://webpack.js.org/)** - module bundler (automatically concatenate files, write CSS with Sass, check JS for errors, optimize images...)
-* **[Bootstrap 4](http://getbootstrap.com/)** - the most popular HTML, CSS and JS framework
-* [HTML5 Boilerplate](https://html5boilerplate.com/) - the web’s most popular front-end template
-* [Sass](https://sass-lang.com/) - CSS preprocessor
-* [Font Awesome 5](https://fontawesome.com/) - the web's most popular vector icons and social logos
-* [Autoprefixer](https://autoprefixer.github.io/) - plugin to parse CSS and add vendor prefixes
-* [Babel](https://babeljs.io/) - toolchain to convert ES6+ code into a backwards compatible
-* [ESLint](https://eslint.org/) - linting utility for JavaScript
-* [webpack-dev-server](https://github.com/webpack/webpack-dev-server) - live reloading (browser update after changes)
-* [Google Fonts](https://fonts.google.com/) - libre licensed fonts
-
-#### [Bootstrap 4](http://getbootstrap.com/) is dependent on:
-
-* [jQuery](http://jquery.com/) - JavaScript library
-* [Popper](http://popper.js.org/) - tooltips and popovers library
+* **Live reloading** <br> browser update after changes
+* **Automatically optimizes** entry files <br> concatenate, minify and inject output files to HTML
+* **[Sass](https://sass-lang.com/) for stylesheets** <br> with [the 7-1 Pattern](https://sass-guidelin.es/#the-7-1-pattern)
+* **Modern JavaScript** <br> ES6 modules-based code linting by [ESLint](https://eslint.org/)
+* Older **browsers support** 
+  * add vendor prefixes in CSS with [Autoprefixer](https://autoprefixer.github.io/)
+  * convert ES6+ code into a backwards compatible with [Babel](https://babeljs.io/)
+* Includes:
+  * **[Webpack 4](https://webpack.js.org/)** configuration - module bundler
+  * **[Bootstrap 4](http://getbootstrap.com/)** - the most popular HTML, CSS and JS framework
+  * [jQuery](http://jquery.com/) - JavaScript library
+  * [Font Awesome 5](https://fontawesome.com/) - the web's most popular vector icons and social logos
+  * [Google Fonts](https://fonts.google.com/) - libre licensed fonts
+* sourceMaps
+* and more...
 
 ## Theme development
 
