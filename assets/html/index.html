@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <title>HTML Starter</title>
   <meta name="description" content="">
-  ${require('./partials/head.html')}
+  <%= require('html-loader!./partials/head.html') %>
 </head>
 <body>
-${require('./partials/browserupgrade.html')}
+<%= require('html-loader!./partials/browserupgrade.html') %>
 <div class="d-flex flex-column h-100">
-  ${require('./partials/header.html')}
+  <%= require('html-loader!./partials/header.html') %>
 
   <main class="d-flex h-100 align-items-center">
     <div class="container">
@@ -23,7 +23,7 @@ ${require('./partials/browserupgrade.html')}
     </div>
   </main>
 
-  ${require('./partials/footer.html')}
+  <%= require('html-loader!./partials/footer.html') %>
 </div>
 </body>
 </html>

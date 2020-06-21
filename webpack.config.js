@@ -1,6 +1,6 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   entry: './assets/index.js',
@@ -16,17 +16,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.(html)$/,
-        loader: 'html-loader',
-        options: {
-          // Interpolation syntax for ES6 template strings
-          interpolate: true,
-          // Disable minifcation during production mode
-          minimize: false,
-        },
-        exclude: /node_modules/,
-      },
       {
         test: /\.(css|sass|scss)$/,
         use: [
@@ -82,12 +71,11 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              outputPath: (url, resourcePath, context) => {
+              outputPath: (url, resourcePath) => {
                 if (/icon\.png|tile\.png|tile-wide\.png/.test(resourcePath)) {
-                  return url;
-                }
-                else {
-                  return `images/${url}`;
+                  return url
+                } else {
+                  return `images/${url}`
                 }
               },
               name: '[name].[ext]',
@@ -136,15 +124,17 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './assets/html/index.html',
       filename: 'index.html',
+      minify: false, // Disable minification during production mode
       hash: true,
     }),
     new HtmlWebpackPlugin({
       template: './assets/html/404.html',
       filename: '404.html',
+      minify: false, // Disable minification during production mode
       hash: true,
     }),
     new MiniCssExtractPlugin({
       filename: './css/styles.css'
     }),
   ]
-};
+}
