@@ -39,16 +39,15 @@ This boilerplate with [Webpack](https://webpack.js.org/) based setup helps you b
 1. Install [Node.js](http://nodejs.org/) (installation depends on your system). After finishing, you will be able to 
 check the version number using `node -v` and `npm -v` commands 
 ([npm is distributed with Node.js](https://www.npmjs.com/get-npm)).
-2. It is recommended to install the latest version of [Yarn](https://yarnpkg.com/en/docs/install).
-3. Clone the repo using `git clone https://github.com/cichy380/html-starter-bs4-webpack.git` or [download *HTML Starter*](https://github.com/cichy380/html-starter-bs4-webpack/archive/master.zip).
-4. Open folder **html-starter-bs4-webpack** (command: `cd html-starter-bs4-webpack`) and install a packages of *HTML Starter* via command: `yarn` or `npm install`. 
+2. Clone the repo using `git clone https://github.com/cichy380/html-starter-bs4-webpack.git` or [download *HTML Starter*](https://github.com/cichy380/html-starter-bs4-webpack/archive/master.zip).
+3. Open folder **html-starter-bs4-webpack** (command: `cd html-starter-bs4-webpack`) and install a packages of *HTML Starter* via `npm install` command. 
 
 Now you have everything you need to run the build process.
 
 #### Build commands
 
-* `yarn start` or `npm run start` ─ compile assets when file changes are made, start [webpack-dev-server](https://github.com/webpack/webpack-dev-server) session
-* `yarn build` or `npm run build` ─ compile and optimize (the files in your assets directory) for production
+* `npm run start` ─ compile assets when file changes are made, start [webpack-dev-server](https://github.com/webpack/webpack-dev-server) session
+* `npm run build` ─ compile and optimize (the files in your assets directory) for production
 
 ## Structure
 
@@ -86,7 +85,7 @@ html-starter-bs4-webpack/
 ├── .eslintrc.js            # ESLint configuration file
 ├── package.json            # Node.js dependencies and scripts
 ├── webpack.config.js       # Webpack configuration file
-├── yarn.lock               # Yarn lock file (don't edit)
+├── package-lock.json       # Node.js dependencies lock file (don't edit)
 └── [...]                   # other...
 ```
 
